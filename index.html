@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Zizeg — Markdown you can hand-edit</title>
+<meta name="description" content="A native Mac markdown editor with synced WYSIWYG and source panes, real files, and content safety built in." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="draft-ribbon">DRAFT</div>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="index.html">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="#features">Features</a></li>
+      <li><a href="#screenshots">Screenshots</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+    </ul>
+    <span class="badge">Coming soon to the Mac App Store</span>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero-copy">
+    <p class="eyebrow">A native macOS markdown editor</p>
+    <h1>Markdown you can hand-edit — and <em>hand back</em> to your AI agent.</h1>
+    <p class="hero-sub">Edit in the rendered view or the raw source — both are fully editable, and both stay in sync automatically. Real files, no vault, no lock-in, content safety built in, not bolted on.</p>
+    <div class="hero-cta"><span class="badge">Coming soon to the Mac App Store</span></div>
+  </div>
+
+  <div class="wrap">
+    <div class="mockup">
+      <div class="mockup-bar">
+        <span class="mockup-dot"></span><span class="mockup-dot"></span><span class="mockup-dot"></span>
+        <span class="mockup-title">Illustrative example — not an actual screenshot</span>
+      </div>
+      <div class="mockup-panes">
+        <div class="pane pane-source"><span class="tok-h">## Docs, hand&#8209;edited safely.</span>
+
+Edit in <span class="tok-em">*source*</span> or <span class="tok-b">**WYSIWYG**</span> — always in sync.
+
+<span class="tok-muted">-</span> real files, no vault
+<span class="tok-muted">-</span> content safety by default<span class="cursor"></span></div>
+        <div class="pane pane-rendered">
+          <h2>Docs, hand-edited safely.</h2>
+          <p>Edit in <em>source</em> or <strong>WYSIWYG</strong> — always in sync.</p>
+          <ul>
+            <li>real files, no vault</li>
+            <li>content safety by default</li>
+          </ul>
+        </div>
+        <span class="sync-tag">⇄ synced</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="usp">
+  <div class="wrap usp-grid">
+    <div class="usp-card">
+      <div class="mark">✓</div>
+      <h3>Files stay yours.</h3>
+      <p>No vault, no proprietary database, no import/export step. What's on disk is what you're editing — always a plain <code>.md</code> file you can open anywhere.</p>
+    </div>
+    <div class="usp-card">
+      <div class="mark">✓</div>
+      <h3>Safe to hand-edit.</h3>
+      <p>A touch-up in the WYSIWYG view can't quietly corrupt the markdown underneath — and a raw edit in source can't quietly break rendering either.</p>
+    </div>
+    <div class="usp-card">
+      <div class="mark">✓</div>
+      <h3>Safe for the next AI agent.</h3>
+      <p>The file on disk never carries injected script, styling, or unsafe markup — whatever reads it next, human or AI, gets a clean file.</p>
+    </div>
+  </div>
+</section>
+
+<section class="features" id="features">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">What's built in</p>
+      <h2>Everything you'd expect. A few things you wouldn't.</h2>
+    </div>
+
+    <div class="feature-grid">
+      <div class="f-card">
+        <span class="f-kicker">EDITING</span>
+        <h3>Dual-pane editing, always in sync</h3>
+        <p>Work in the rendered WYSIWYG view, the raw source, or switch freely between them — edits in one are reflected in the other automatically. Not a read-only preview bolted onto a text pane; both sides are the real editor.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">EDITING</span>
+        <h3>Full formatting toolbar</h3>
+        <p>One toolbar, works in both panes. In source, a click inserts the actual markdown characters (<code>**bold**</code>, <code>## Heading</code>) right at your cursor. In WYSIWYG, the same click formats live, like Word. And you don't need the toolbar for the basics — type <code>## </code> for a Heading 2, <code>- </code> for a bullet, as you go.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">SAFETY</span>
+        <h3>Content safety by default</h3>
+        <p>Your saved <code>.md</code> file is never touched or rewritten for safety — a plain text file can't do anything dangerous on its own. Sanitization happens only where it matters: when content is rendered, against an allowlist, not "best effort." Remote images stay blocked until you click to load them.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">FILES</span>
+        <h3>Your files stay real files</h3>
+        <p>Edits save straight to the actual <code>.md</code> file on disk — no proprietary format, no database, no import/export step.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">FILES</span>
+        <h3>Images travel with the file</h3>
+        <p>Drop in a local image and Zizeg copies it into a plain sibling folder next to your document. Rename or move the file from inside Zizeg and the folder follows automatically. Rename it from outside Zizeg and Zizeg picks up the mismatch next time you open the file, offering to reconcile it for you.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">FILES</span>
+        <h3>Choose how images are stored</h3>
+        <p>Keep images in the sibling asset folder — best for git repos, a small diffable file. Or embed them as base64 directly inside the <code>.md</code> — best for single-file portability. Zizeg follows whichever a document already uses; <strong>Save As</strong> is where you convert between the two.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">SYSTEM</span>
+        <h3>Preferences that stick</h3>
+        <p>Startup size, default view, tab behavior, theme — the expected baseline. What's not standard elsewhere: WYSIWYG and source panes have fully independent font settings. Visual preferences apply live to documents already open.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">SYSTEM</span>
+        <h3>Built for macOS</h3>
+        <p>Native window tabbing, a table of contents pane, row numbers, and full light/dark theming.</p>
+      </div>
+
+      <div class="f-card">
+        <span class="f-kicker">EXPORT</span>
+        <h3>Export to HTML or PDF</h3>
+        <p>Self-contained exports with local images inlined. If the document references remote images, you get a picker listing every one of them — pre-checked based on what you've approved — so you can include, exclude, or revoke any before export.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="screens" id="screenshots">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">See it</p>
+      <h2>Zizeg, in the wild</h2>
+    </div>
+    <div class="screens-grid">
+      <div class="shot-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5L3 20"/></svg>
+        <span class="cap">Screenshot — <b>split-pane editing</b></span>
+      </div>
+      <div class="shot-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5L3 20"/></svg>
+        <span class="cap">Screenshot — <b>toolbar &amp; formatting</b></span>
+      </div>
+      <div class="shot-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5L3 20"/></svg>
+        <span class="cap">Screenshot — <b>content-safety flag</b></span>
+      </div>
+      <div class="shot-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5L3 20"/></svg>
+        <span class="cap">Screenshot — <b>export &amp; remote-image picker</b></span>
+      </div>
+      <div class="shot-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5L3 20"/></svg>
+        <span class="cap">Screenshot — <b>table of contents pane</b></span>
+      </div>
+      <div class="shot-placeholder">
+        <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="4" width="18" height="16" rx="2"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5.5-5.5L3 20"/></svg>
+        <span class="cap">Screenshot — <b>independent pane fonts (Preferences)</b></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="privacy.html">Privacy Policy</a></li>
+      <li><a href="terms.html">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+      <li><a href="https://github.com/Kukucsi-lab/zizeg-site">GitHub</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+
+</body>
+</html>

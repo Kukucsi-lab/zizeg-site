@@ -188,29 +188,58 @@ Edit in <span class="tok-em">*source*</span> or <span class="tok-b">**WYSIWYG**<
     </div>
     <div class="screens-grid">
       <figure class="shot">
-        <img src="screenshots/shot-01-hero.png" alt="Zizeg split-pane editing — rendered and source views side by side, kept in sync" loading="lazy" />
+        <button type="button" class="shot-btn" data-full="screenshots/full/shot-01-hero.png" data-caption="Split-pane editing — source and rendered, always in sync">
+          <img src="screenshots/shot-01-hero.png" alt="Zizeg split-pane editing — rendered and source views side by side, kept in sync" loading="lazy" />
+        </button>
         <figcaption class="cap"><b>Split-pane editing</b> — source and rendered, always in sync</figcaption>
       </figure>
       <figure class="shot">
-        <img src="screenshots/shot-02-rendered.png" alt="Zizeg rendered WYSIWYG view showing task lists and a table" loading="lazy" />
+        <button type="button" class="shot-btn" data-full="screenshots/full/shot-02-rendered.png" data-caption="Clean WYSIWYG — tables, tasks, formatting">
+          <img src="screenshots/shot-02-rendered.png" alt="Zizeg rendered WYSIWYG view showing task lists and a table" loading="lazy" />
+        </button>
         <figcaption class="cap"><b>Clean WYSIWYG</b> — tables, tasks, formatting</figcaption>
       </figure>
       <figure class="shot">
-        <img src="screenshots/shot-03-safety.png" alt="Zizeg blocking a remote image by default with a click-to-load prompt" loading="lazy" />
+        <button type="button" class="shot-btn" data-full="screenshots/full/shot-03-safety.png" data-caption="Content safety — remote images blocked by default">
+          <img src="screenshots/shot-03-safety.png" alt="Zizeg blocking a remote image by default with a click-to-load prompt" loading="lazy" />
+        </button>
         <figcaption class="cap"><b>Content safety</b> — remote images blocked by default</figcaption>
       </figure>
       <figure class="shot">
-        <img src="screenshots/shot-04-export.png" alt="Zizeg export dialog letting you choose which remote images to embed" loading="lazy" />
+        <button type="button" class="shot-btn" data-full="screenshots/full/shot-04-export.png" data-caption="Export — choose which remote images actually go out">
+          <img src="screenshots/shot-04-export.png" alt="Zizeg export dialog letting you choose which remote images to embed" loading="lazy" />
+        </button>
         <figcaption class="cap"><b>Export</b> — choose which remote images actually go out</figcaption>
       </figure>
       <figure class="shot">
-        <img src="screenshots/shot-05-toc.png" alt="Zizeg table of contents pane with row numbers in the source view" loading="lazy" />
+        <button type="button" class="shot-btn" data-full="screenshots/full/shot-05-toc.png" data-caption="Navigate — table of contents pane, row numbers">
+          <img src="screenshots/shot-05-toc.png" alt="Zizeg table of contents pane with row numbers in the source view" loading="lazy" />
+        </button>
         <figcaption class="cap"><b>Navigate</b> — table of contents pane, row numbers</figcaption>
       </figure>
       <figure class="shot">
-        <img src="screenshots/shot-06-dark.png" alt="Zizeg split-pane editing in dark mode" loading="lazy" />
+        <button type="button" class="shot-btn" data-full="screenshots/full/shot-06-dark.png" data-caption="Dark mode, built in">
+          <img src="screenshots/shot-06-dark.png" alt="Zizeg split-pane editing in dark mode" loading="lazy" />
+        </button>
         <figcaption class="cap"><b>Dark mode</b>, built in</figcaption>
       </figure>
+    </div>
+
+    <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Screenshot viewer" hidden>
+      <button type="button" class="lb-close" id="lbClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+      <button type="button" class="lb-nav lb-prev" id="lbPrev" aria-label="Previous screenshot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <button type="button" class="lb-nav lb-next" id="lbNext" aria-label="Next screenshot">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+      <figure class="lb-figure">
+        <img id="lbImage" alt="" />
+        <figcaption id="lbCaption"></figcaption>
+      </figure>
+      <p class="lb-count" id="lbCount"></p>
     </div>
   </div>
 </section>
@@ -226,6 +255,68 @@ Edit in <span class="tok-em">*source*</span> or <span class="tok-b">**WYSIWYG**<
     <span class="footer-copy">© 2026 Zizeg</span>
   </div>
 </footer>
+
+<script>
+(function () {
+  var triggers = Array.prototype.slice.call(document.querySelectorAll(".shot-btn"));
+  if (!triggers.length) return;
+
+  var lightbox = document.getElementById("lightbox");
+  var lbImage = document.getElementById("lbImage");
+  var lbCaption = document.getElementById("lbCaption");
+  var lbCount = document.getElementById("lbCount");
+  var lastFocused = null;
+  var index = 0;
+
+  function show(i) {
+    index = (i + triggers.length) % triggers.length;
+    var t = triggers[index];
+    lbImage.src = t.getAttribute("data-full");
+    lbImage.alt = t.getAttribute("data-caption") || "";
+    lbCaption.textContent = t.getAttribute("data-caption") || "";
+    lbCount.textContent = (index + 1) + " / " + triggers.length;
+    // Preload neighbors so prev/next feels instant.
+    [1, -1].forEach(function (d) {
+      var n = triggers[(index + d + triggers.length) % triggers.length];
+      new Image().src = n.getAttribute("data-full");
+    });
+  }
+
+  function open(i) {
+    lastFocused = document.activeElement;
+    show(i);
+    lightbox.hidden = false;
+    document.body.style.overflow = "hidden";
+    document.getElementById("lbClose").focus();
+  }
+
+  function close() {
+    lightbox.hidden = true;
+    document.body.style.overflow = "";
+    lbImage.src = "";
+    if (lastFocused) lastFocused.focus();
+  }
+
+  triggers.forEach(function (t, i) {
+    t.addEventListener("click", function () { open(i); });
+  });
+
+  document.getElementById("lbClose").addEventListener("click", close);
+  document.getElementById("lbPrev").addEventListener("click", function () { show(index - 1); });
+  document.getElementById("lbNext").addEventListener("click", function () { show(index + 1); });
+
+  lightbox.addEventListener("click", function (e) {
+    if (e.target === lightbox) close();
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (lightbox.hidden) return;
+    if (e.key === "Escape") close();
+    else if (e.key === "ArrowLeft") show(index - 1);
+    else if (e.key === "ArrowRight") show(index + 1);
+  });
+})();
+</script>
 
 </body>
 </html>

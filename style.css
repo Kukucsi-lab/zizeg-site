@@ -530,6 +530,14 @@ a { color: inherit; }
   object-position: top center;
 }
 
+/* Zoomed detail crops (content safety, export, toolbar) have their own natural
+   aspect ratio, not the standard grid tile's — contain rather than cover so
+   nothing gets clipped, letterboxed against the card's own dark background. */
+.shot img.detail-shot {
+  object-fit: contain;
+  object-position: center;
+}
+
 .shot .cap {
   font-family: var(--font-mono);
   font-size: 12px;
@@ -667,6 +675,149 @@ a { color: inherit; }
   font-size: 13px;
   color: var(--text-onink-muted);
   font-family: var(--font-mono);
+}
+
+/* ---------- utility ---------- */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* ---------- compare page ---------- */
+
+.cmp-hero { padding: 72px 0 40px; text-align: center; }
+
+.cmp-hero .eyebrow { text-align: center; }
+
+.cmp-hero h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-style: normal;
+  font-size: clamp(28px, 4.4vw, 44px);
+  line-height: 1.18;
+  letter-spacing: -0.01em;
+  margin: 0 0 18px;
+  color: var(--text-onink);
+}
+
+.cmp-sub {
+  font-size: 17px;
+  line-height: 1.65;
+  color: var(--text-onink-muted);
+  margin: 0 auto;
+  max-width: 640px;
+}
+
+.cmp-table-section { padding: 20px 0 90px; }
+
+.cmp-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border-onink);
+  border-radius: var(--radius);
+  background: var(--ink-soft);
+  -webkit-overflow-scrolling: touch;
+}
+
+.cmp-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 760px;
+  font-size: 14.5px;
+}
+
+.cmp-table th,
+.cmp-table td {
+  padding: 13px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-onink);
+  vertical-align: top;
+  white-space: normal;
+}
+
+.cmp-table thead th {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--text-onink-muted);
+  position: sticky;
+  top: 0;
+  background: var(--ink-soft);
+  z-index: 2;
+}
+
+.cmp-feature-col {
+  min-width: 240px;
+  position: sticky;
+  left: 0;
+  background: var(--ink-soft);
+  z-index: 3;
+}
+
+.cmp-table tbody th[scope="row"] {
+  font-weight: 500;
+  font-size: 14px;
+  color: var(--text-onink);
+  position: sticky;
+  left: 0;
+  background: var(--ink-soft);
+  z-index: 1;
+  border-right: 1px solid var(--border-onink);
+}
+
+.cmp-zizeg-col {
+  background: var(--amber-soft);
+}
+
+thead .cmp-zizeg-col {
+  color: var(--amber);
+  font-weight: 600;
+}
+
+.cmp-yes { color: var(--teal); font-size: 16px; font-weight: 700; }
+.cmp-no { color: var(--text-onink-muted); font-size: 14px; opacity: 0.6; }
+.cmp-partial { color: var(--amber); font-size: 10px; vertical-align: middle; }
+.cmp-na { color: var(--text-onink-muted); opacity: 0.45; }
+.cmp-planned { color: var(--amber); font-family: var(--font-mono); font-size: 12.5px; }
+.cmp-unconfirmed { color: var(--teal); font-size: 14px; font-weight: 700; }
+.cmp-text { color: var(--text-onink); }
+
+.cmp-table sup {
+  font-size: 10px;
+  color: var(--teal);
+  margin-left: 2px;
+}
+
+.cmp-notes {
+  margin: 24px 0 0;
+  padding-left: 22px;
+  color: var(--text-onink-muted);
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.cmp-notes li { margin-bottom: 6px; }
+
+.cmp-disclaimer {
+  margin: 28px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--border-onink);
+  font-size: 12.5px;
+  line-height: 1.7;
+  color: var(--text-onink-muted);
+}
+
+@media (max-width: 620px) {
+  .cmp-table { font-size: 13.5px; }
+  .cmp-table th, .cmp-table td { padding: 11px 12px; }
 }
 
 /* ---------- privacy page ---------- */

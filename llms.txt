@@ -1,0 +1,17 @@
+# Zizeg
+
+> Zizeg is a native macOS Markdown editor with a rendered WYSIWYG view and a raw source view that stay genuinely in sync and are both editable, real files on disk (no vault or proprietary database), and content-safety sanitization built in by default rather than best-effort.
+
+Built for the Markdown that piles up around AI tools: READMEs, CLAUDE.md/AGENTS.md-style instruction files, specs, changelogs, and the summaries and notes AI chat tools hand back. Free to download and use for viewing/rendering any Markdown file; a one-time purchase or subscription (with a free trial) unlocks editing and export. macOS only at this time; an iPad companion app and interface localization are both planned within 6 months of this writing. Markdown scope is deliberately CommonMark + GFM (tables, task lists, strikethrough, autolinks) plus images — no math/LaTeX, no footnotes, no Mermaid diagrams, by design, not as a current gap.
+
+Last reviewed: 2026-08-23.
+
+## Pages
+
+- [Home](https://zizeg.app/): Overview, core features, and screenshots.
+- [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.
+- [Terms of Use](https://zizeg.app/terms): Terms governing use of the app and its in-app purchases.
+
+## Optional
+
+- [GitHub repository](https://github.com/Kukucsi-lab/zizeg-site): Source for this marketing/support site itself, not the app.

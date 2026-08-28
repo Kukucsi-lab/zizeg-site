@@ -1,17 +1,15 @@
 # Zizeg
 
-> Zizeg is a native macOS Markdown editor with a rendered WYSIWYG view and a raw source view that stay genuinely in sync and are both editable, real files on disk (no vault or proprietary database), and content-safety sanitization built in by default rather than best-effort.
+> Zizeg is a native macOS Markdown editor. Edit the same plain `.md` file in a rendered view or raw Markdown; both are fully editable, stay in sync automatically, and save directly to the file on disk — no vault or proprietary format.
 
-Built for the Markdown that piles up around AI tools: READMEs, CLAUDE.md/AGENTS.md-style instruction files, specs, changelogs, and the summaries and notes AI chat tools hand back. Free to download and use for viewing/rendering any Markdown file; a one-time purchase or subscription (with a free trial) unlocks editing and export. macOS only at this time; an iPad companion app and interface localization are both planned within 6 months of this writing. Markdown scope is deliberately CommonMark + GFM (tables, task lists, strikethrough, autolinks) plus images — no math/LaTeX, no footnotes, no Mermaid diagrams, by design, not as a current gap.
+Zizeg is designed for Markdown in everyday work, including the READMEs, instruction files, specifications, plans, changelogs, and summaries that accumulate around AI-assisted workflows. Zizeg itself does not use AI or send documents to an AI service. Safety checks never rewrite the saved source: sanitization happens only during rendering and export, remote images stay blocked until approved, and unsafe or unsupported content is visibly flagged.
 
-Last reviewed: 2026-08-23.
+Zizeg is free to download and use for viewing or rendering Markdown files. A one-time purchase or subscription with a free trial unlocks editing and export. Markdown support deliberately covers CommonMark and GFM — including tables, task lists, strikethrough, autolinks, and images — without math/LaTeX, footnotes, or Mermaid diagrams.
+
+Last reviewed: 2026-08-29.
 
 ## Pages
 
 - [Home](https://zizeg.app/): Overview, core features, and screenshots.
 - [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.
 - [Terms of Use](https://zizeg.app/terms): Terms governing use of the app and its in-app purchases.
-
-## Optional
-
-- [GitHub repository](https://github.com/Kukucsi-lab/zizeg-site): Source for this marketing/support site itself, not the app.

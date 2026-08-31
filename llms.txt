@@ -1,15 +1,26 @@
 # Zizeg
 
-> Zizeg is a native macOS Markdown editor. Edit the same plain `.md` file in a rendered view or raw Markdown; both are fully editable, stay in sync automatically, and save directly to the file on disk — no vault or proprietary format.
+> Preview and Source. Both editable. Zizeg is a native macOS Markdown editor for working visually, directly in Markdown, or with both editors side by side.
 
-Zizeg is designed for Markdown in everyday work, including the READMEs, instruction files, specifications, plans, changelogs, and summaries that accumulate around AI-assisted workflows. Zizeg itself does not use AI or send documents to an AI service. Safety checks never rewrite the saved source: sanitization happens only during rendering and export, remote images stay blocked until approved, and unsafe or unsupported content is visibly flagged.
+Zizeg edits ordinary `.md` files directly on disk. Its rendered Preview and Markdown Source are equal editing surfaces: users can edit either one separately or keep both visible in Split view, where changes stay synchronized. The same toolbar, menus, and keyboard shortcuts work in both editors. Preview and Source can also use independent typography and independent or synchronized scrolling.
 
-Zizeg is free to download and use for viewing or rendering Markdown files. A one-time purchase or subscription with a free trial unlocks editing and export. Markdown support deliberately covers CommonMark and GFM — including tables, task lists, strikethrough, autolinks, and images — without math/LaTeX, footnotes, or Mermaid diagrams.
+Zizeg follows native macOS document conventions, including standard document tabs, menus, toolbar controls, autosave, and Finder-based files. It does not require a vault, library, import step, proprietary database, or proprietary document format.
 
-Last reviewed: 2026-08-29.
+The app is designed for everyday Markdown work, including READMEs, instruction files, specifications, plans, changelogs, and summaries created during AI-assisted workflows. Zizeg itself does not use AI or send documents to an AI service.
+
+Safety checks do not silently rewrite the saved Markdown. Sanitization happens during rendering and export, remote images remain blocked until the user approves them, and unsafe or unsupported content is visibly flagged. Pasted images can be stored in a sibling assets folder or embedded for single-file portability. Zizeg can export self-contained HTML and multi-page PDF.
+
+Markdown support covers CommonMark and GitHub Flavored Markdown, including headings, lists, task lists, tables, strikethrough, autolinks, code, quotes, links, and images. It does not currently include math/LaTeX, footnotes, or Mermaid diagrams.
+
+## Availability and pricing
+
+Zizeg is planned for the Mac App Store in late September 2026. Opening and viewing Markdown is free. Editing and export can be unlocked with a planned USD lifetime purchase of $14.99, a 12-month subscription of $9.99, or a 3-month subscription of $2.99. Both subscriptions include a 7-day free trial. Final App Store prices may vary by region.
+
+Last reviewed: 2026-08-31.
 
 ## Pages
 
-- [Home](https://zizeg.app/): Overview, core features, and screenshots.
+- [Home](https://zizeg.app/): Product overview, the Preview/Split/Source workflow, features, screenshots, safety, export, and planned pricing.
+- [Markdown editor comparison](https://zizeg.app/compare): A workflow-focused comparison with Clearly, Typora, Obsidian, iA Writer, and Ferrite. Includes methodology and links to vendor documentation.
 - [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.
 - [Terms of Use](https://zizeg.app/terms): Terms governing use of the app and its in-app purchases.

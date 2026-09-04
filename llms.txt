@@ -14,13 +14,14 @@ Markdown support covers CommonMark and GitHub Flavored Markdown, including headi
 
 ## Availability and pricing
 
-Zizeg is planned for the Mac App Store in late September 2026. Opening and viewing Markdown is free. Editing and export can be unlocked with a planned USD lifetime purchase of $14.99, a 12-month subscription of $9.99, or a 3-month subscription of $2.99. Both subscriptions include a 7-day free trial. Final App Store prices may vary by region.
+Zizeg is available for pre-order on the Mac App Store, with release expected September 22, 2026: https://apps.apple.com/us/app/zizeg/id6800761262?mt=12. Opening and viewing Markdown is free. Editing and export can be unlocked with a USD lifetime purchase of $14.99, a 12-month subscription of $9.99, or a 3-month subscription of $2.99. Both subscriptions include a 7-day free trial. Final App Store prices vary by region.
 
-Last reviewed: 2026-08-31.
+Last reviewed: 2026-09-05.
 
 ## Pages
 
 - [Home](https://zizeg.app/): Product overview, the Preview/Split/Source workflow, features, screenshots, safety, export, and planned pricing.
+- [Mac App Store](https://apps.apple.com/us/app/zizeg/id6800761262?mt=12): Zizeg's official pre-order page.
 - [Markdown editor comparison](https://zizeg.app/compare): A workflow-focused comparison with Clearly, Typora, Obsidian, iA Writer, and Ferrite. Includes methodology and links to vendor documentation.
 - [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.
 - [Terms of Use](https://zizeg.app/terms): Terms governing use of the app and its in-app purchases.

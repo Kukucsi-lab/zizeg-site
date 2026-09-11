@@ -6,6 +6,8 @@ Zizeg edits ordinary `.md` files directly on disk. Its rendered Preview and Mark
 
 Zizeg follows native macOS document conventions, including standard document tabs, menus, toolbar controls, autosave, and Finder-based files. It does not require a vault, library, import step, proprietary database, or proprietary document format.
 
+Language availability: English, Hungarian, German, French, Spanish (Spain), and Spanish (Mexico). Choose the app interface language in Zizeg Preferences; the built-in Help follows the Mac language setting.
+
 The app is designed for everyday Markdown work, including READMEs, instruction files, specifications, plans, changelogs, and summaries created during AI-assisted workflows. Zizeg itself does not use AI or send documents to an AI service.
 
 Safety checks do not silently rewrite the saved Markdown. Sanitization happens during rendering and export, remote images remain blocked until the user approves them, and unsafe or unsupported content is visibly flagged. Pasted images can be stored in a sibling assets folder or embedded for single-file portability. Zizeg can export self-contained HTML and multi-page PDF.

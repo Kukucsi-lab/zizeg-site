@@ -25,6 +25,8 @@ App Store availability updated: 2026-09-23. Other product details last reviewed:
 - [Home](https://zizeg.app/): Product overview, the Preview/Split/Source workflow, features, screenshots, safety, export, and pricing.
 - [Markdown guides](https://zizeg.app/guides/): Practical guides to reading and working with Markdown on a Mac.
 - [Open and read Markdown files on Mac](https://zizeg.app/guides/open-markdown-files-on-mac/): What .md files are, plain-text and formatted reading, opening files in Zizeg, default viewing modes, and swapping Split panes.
+- [Change the default Markdown app on Mac](https://zizeg.app/guides/change-default-markdown-app-mac/): Finder file associations, Zizeg’s default-app shortcut, and default viewing modes.
+- [Edit Markdown without a vault](https://zizeg.app/guides/edit-markdown-without-vault/): Open and edit standalone files in place, use autosave and Save As, and keep documents and images together.
 - [Mac App Store](https://apps.apple.com/us/app/zizeg/id6800761262?mt=12): Zizeg's official download page.
 - [Markdown editor comparison](https://zizeg.app/compare): A workflow-focused comparison with Clearly, Typora, Obsidian, iA Writer, and Ferrite. Includes methodology and links to vendor documentation.
 - [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.

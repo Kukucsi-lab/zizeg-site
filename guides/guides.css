@@ -100,3 +100,11 @@
   .guide-page .nav-links li:nth-child(-n + 2) { display: none; }
   .guide-page .nav-links { gap: 14px; font-size: 13px; }
 }
+
+/* Multiple guides remain a readable list beside the product introduction. */
+.guide-card-list { display: grid; gap: 24px; }
+.guide-card-list .guide-card { display: block; }
+.guide-file-example { margin: 28px 0; padding: 24px; background: var(--paper-dim); border: 1px solid var(--border-onpaper); border-radius: 12px; }
+.guide-file-example pre { overflow-x: auto; font: 13px/1.8 var(--font-mono); }
+.guide-file-example pre code { font: inherit; white-space: pre; }
+.guide-file-example > p:last-child { font-size: 14px; margin-bottom: 0; }

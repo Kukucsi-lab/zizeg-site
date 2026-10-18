@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Allow: /compare
+Allow: /guides/
 Allow: /llms.txt
 
 Sitemap: https://zizeg.app/sitemap.xml

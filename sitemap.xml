@@ -2,10 +2,18 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://zizeg.app/</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-10-18</lastmod>
   </url>
   <url>
     <loc>https://zizeg.app/compare</loc>
-    <lastmod>2026-08-31</lastmod>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://zizeg.app/guides/</loc>
+    <lastmod>2026-10-18</lastmod>
+  </url>
+  <url>
+    <loc>https://zizeg.app/guides/open-markdown-files-on-mac/</loc>
+    <lastmod>2026-10-18</lastmod>
   </url>
 </urlset>

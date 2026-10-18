@@ -2022,3 +2022,12 @@ thead .cmp-zizeg-col {
 .legal-page .footer-links a { color: var(--text-onpaper-muted); }
 .legal-page .footer-links a:hover { color: var(--text-onpaper); }
 .legal-page .footer-copy { color: var(--text-onpaper-muted); }
+
+/* Guide discovery stays visible across the product site. */
+.home-guides { border-top: 1px solid var(--border-onpaper); }
+.home-guides-all { display: block; width: fit-content; margin: 20px auto 0; font-size: 14px; text-underline-offset: 4px; }
+@media (max-width: 620px) {
+  .nav .wrap { flex-wrap: wrap; height: auto; min-height: 68px; gap: 12px 20px; padding-top: 14px; padding-bottom: 14px; }
+  .nav-links { flex-wrap: wrap; justify-content: flex-end; gap: 10px 16px; }
+  .footer-links { flex-wrap: wrap; }
+}

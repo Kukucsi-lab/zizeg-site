@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Edit Markdown Tables Visually on Mac — Zizeg</title>
+<meta name="description" content="Edit Markdown table cells, add or remove rows and columns, and set alignment in Zizeg’s Preview while keeping ordinary Markdown source." />
+<link rel="canonical" href="https://zizeg.app/guides/edit-markdown-tables-visually/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Zizeg" />
+<meta property="og:title" content="Edit Markdown Tables Visually on Mac — Zizeg" />
+<meta property="og:description" content="Edit Markdown table cells, add or remove rows and columns, and set alignment in Zizeg’s Preview while keeping ordinary Markdown source." />
+<meta property="og:url" content="https://zizeg.app/guides/edit-markdown-tables-visually/" />
+<meta property="og:image" content="https://zizeg.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Edit Markdown Tables Visually on Mac — Zizeg" />
+<meta name="twitter:description" content="Edit Markdown table cells, add or remove rows and columns, and set alignment in Zizeg’s Preview while keeping ordinary Markdown source." />
+<meta name="twitter:image" content="https://zizeg.app/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/guides/guides.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "How to edit Markdown tables without counting pipes",
+      "description": "Edit Markdown table cells, add or remove rows and columns, and set alignment in Zizeg\u2019s Preview while keeping ordinary Markdown source.",
+      "mainEntityOfPage": "https://zizeg.app/guides/edit-markdown-tables-visually/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zizeg.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://zizeg.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Edit Markdown tables visually",
+          "item": "https://zizeg.app/guides/edit-markdown-tables-visually/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="guide-page">
+<a class="guide-skip" href="#main-content">Skip to guide</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#screenshots">Screenshots</a></li>
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/guides/" aria-current="true">Guides</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+    <a class="app-store-link app-store-nav-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store">
+      <img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" />
+    </a>
+  </div>
+</nav>
+<main id="main-content">
+<header class="guide-hero"><div class="wrap">
+<nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Edit Markdown tables visually</span></nav>
+<p class="eyebrow">Tables without the syntax juggling</p>
+<h1>Change the table.<br /><em>Keep the Markdown.</em></h1><p class="guide-lead">Edit cells, rows, and columns as part of the document you’re reading—without counting separators in the source.</p>
+<div class="guide-answer"><span class="guide-label">The quick answer</span><p>With editing unlocked in Zizeg, click a table cell in <strong>Preview</strong> and edit its text directly. Use <strong>Table Operations</strong> to add or remove rows and columns or set column alignment. The table stays Markdown, and you can inspect its source in Split view.</p></div>
+</div></header>
+<div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#start">Start with a small table</a><a href="#insert">Insert and fill the table</a><a href="#structure">Change rows and columns</a><a href="#alignment">Set column alignment</a><a href="#source">Inspect the source when needed</a><a href="#try-it">Try a useful edit</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="start"><h2>Start with the information, not the pipes.</h2><p>A Markdown pipe table has a header row, a separator row, and data rows. The vertical bars separate cells. You can write all of that by hand, or use a visual editor to handle the structure while you work on the contents.</p><div class="guide-example guide-table-example"><div><p class="guide-label">The saved Markdown</p><pre><code>| Task   | Owner | Status |
+| :----- | :---- | :----- |
+| Draft  | Anna  | Ready  |
+| Review | Ben   | Next   |</code></pre></div><div class="guide-example-rendered"><p class="guide-label">The rendered table</p><table class="guide-table"><thead><tr><th scope="col">Task</th><th scope="col">Owner</th><th scope="col">Status</th></tr></thead><tbody><tr><td>Draft</td><td>Anna</td><td>Ready</td></tr><tr><td>Review</td><td>Ben</td><td>Next</td></tr></tbody></table></div></div><p>Use a small table like this to try the workflow. The goal is the same ordinary Markdown; you’re choosing a more convenient way to edit it.</p></section><section id="insert"><h2>Insert a table in Zizeg.</h2><ol class="guide-steps"><li><strong>Open your document in Preview or Split.</strong><span>Choose <strong>View → Preview</strong> (<kbd>⌘1</kbd>) or <strong>Split</strong> (<kbd>⌘3</kbd>). With editing unlocked, put the cursor where the table should go.</span></li><li><strong>Choose Insert → Table from the toolbar.</strong><span>Zizeg inserts a 3-by-3 table. Use the header cells for <strong>Task</strong>, <strong>Owner</strong>, and <strong>Status</strong>.</span></li><li><strong>Enter your rows.</strong><span>Fill in Draft / Anna / Ready and Review / Ben / Next. Press <kbd>Tab</kbd> to move to the next cell.</span></li></ol><div class="guide-product-note"><strong>Read for free. Unlock editing when you need it.</strong><p>Opening and reading are free in every view. Editing and HTML or PDF export require a one-time purchase or an active subscription.</p></div></section><section id="structure"><h2>Change the structure where you’re working.</h2><p>Place the cursor in a table cell, then open <strong>Table Operations</strong> from the toolbar’s Insert menu or the cell’s contextual menu.</p><ul><li><strong>Add a row:</strong> insert above or below the current row. For example, add a Publish task below Review.</li><li><strong>Add a column:</strong> insert before or after the current column. Add Due after Status when the table needs dates.</li><li><strong>Remove what you no longer need:</strong> delete the current row, column, or the whole table.</li></ul><p>These actions let you change the table without manually adding a separator to every source line. Deleting the final row or column removes the table itself.</p></section><section id="alignment"><h2>Align one column at a time.</h2><p>Click a cell in the column you want to change, then use <strong>Table Operations</strong> to choose left, center, right, or default alignment.</p><p>Left alignment works well for descriptive text. Right alignment can make a column of short numbers easier to scan. Alignment is stored in the Markdown separator row, using colons such as <code>:---</code>, <code>:---:</code>, or <code>---:</code>.</p><p>That changes the alignment within cells. It doesn’t turn the document into a spreadsheet or add calculations.</p></section><section id="source"><h2>Keep the source available.</h2><p>Choose <strong>Split</strong> to see your rendered table beside its Markdown. Edit a cell in Preview and watch Source update, or change its text in Source and see the rendered result.</p><p>Zizeg normally keeps Preview changes localized, but a table edit may reformat the affected block. Use Source when precise spacing or a particular syntax choice matters. You don’t have to keep every pipe visually lined up in the text just to read the rendered table.</p><p>Some apps support different table dialects. This guide uses the common GitHub Flavored Markdown pipe-table form, not grid tables, merged cells, or spreadsheet formulas.</p><p>See <a href="/guides/editable-markdown-preview-vs-split-view/">how editable Preview differs from a read-only split preview</a> for the broader editing model.</p></section><section id="try-it"><h2>A quick exercise for your next document.</h2><p>Take the sample table above, change Ben to another owner, add a Publish row, then add a Due column. Align the column that benefits from it and check the result in Source.</p><p>You’ve edited the content, structure, and presentation without changing the file format. Zizeg autosaves ordinary edits in place. If you want to experiment without changing the original document, use <strong>File → Save As…</strong> first.</p><p>New to file-based Markdown editing? See <a href="/guides/edit-markdown-without-vault/">how to work with a standalone document</a>.</p></section></article></div>
+  <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
+    <p class="eyebrow">Open your next .md file</p>
+    <h2 id="guide-cta-title">Edit the document.<br /><em>Keep the plain file.</em></h2>
+    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
+  </div></section>
+<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/editable-markdown-preview-vs-split-view/"><span class="guide-label">Related guide</span><strong>Editable Markdown preview or split preview: what is the difference? <span aria-hidden="true">→</span></strong></a><a href="/guides/native-mac-typora-alternative/"><span class="guide-label">Related guide</span><strong>Looking for a native Mac alternative to Typora? Start with your workflow <span aria-hidden="true">→</span></strong></a></nav>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+</body>
+</html>

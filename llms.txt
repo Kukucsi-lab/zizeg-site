@@ -27,6 +27,9 @@ App Store availability updated: 2026-09-23. Other product details last reviewed:
 - [Open and read Markdown files on Mac](https://zizeg.app/guides/open-markdown-files-on-mac/): What .md files are, plain-text and formatted reading, opening files in Zizeg, default viewing modes, and swapping Split panes.
 - [Change the default Markdown app on Mac](https://zizeg.app/guides/change-default-markdown-app-mac/): Finder file associations, Zizeg’s default-app shortcut, and default viewing modes.
 - [Edit Markdown without a vault](https://zizeg.app/guides/edit-markdown-without-vault/): Open and edit standalone files in place, use autosave and Save As, and keep documents and images together.
+- [Editable Markdown preview or split preview: what is the difference?](https://zizeg.app/guides/editable-markdown-preview-vs-split-view/): Compare four models: source alone, source with read-only preview, editable rendered view alone, and source with editable Preview.
+- [Looking for a native Mac alternative to Typora? Start with your workflow](https://zizeg.app/guides/native-mac-typora-alternative/): Try editable Preview and Source, Mac-native controls, a heading outline, row numbers, and one-time or subscription editing access.
+- [How to edit Markdown tables without counting pipes](https://zizeg.app/guides/edit-markdown-tables-visually/): Build a table, edit cells, change rows and columns, and set alignment while keeping Markdown source.
 - [Mac App Store](https://apps.apple.com/us/app/zizeg/id6800761262?mt=12): Zizeg's official download page.
 - [Markdown editor comparison](https://zizeg.app/compare): A workflow-focused comparison with Clearly, Typora, Obsidian, iA Writer, and Ferrite. Includes methodology and links to vendor documentation.
 - [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.

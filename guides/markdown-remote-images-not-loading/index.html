@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Online Images Missing From Markdown Preview? — Zizeg</title>
+<meta name="description" content="Fix missing online Markdown images on Mac. Distinguish blocked content from a broken URL, check Zizeg remote-image settings, and verify exported pictures." />
+<link rel="canonical" href="https://zizeg.app/guides/markdown-remote-images-not-loading/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Zizeg" />
+<meta property="og:title" content="Online Images Missing From Markdown Preview? — Zizeg" />
+<meta property="og:description" content="Fix missing online Markdown images on Mac. Distinguish blocked content from a broken URL, check Zizeg remote-image settings, and verify exported pictures." />
+<meta property="og:url" content="https://zizeg.app/guides/markdown-remote-images-not-loading/" />
+<meta property="og:image" content="https://zizeg.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Online Images Missing From Markdown Preview? — Zizeg" />
+<meta name="twitter:description" content="Fix missing online Markdown images on Mac. Distinguish blocked content from a broken URL, check Zizeg remote-image settings, and verify exported pictures." />
+<meta name="twitter:image" content="https://zizeg.app/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/guides/guides.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Why are online images missing from my Markdown preview?",
+      "description": "Fix missing online Markdown images on Mac. Distinguish blocked content from a broken URL, check Zizeg remote-image settings, and verify exported pictures.",
+      "mainEntityOfPage": "https://zizeg.app/guides/markdown-remote-images-not-loading/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zizeg.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://zizeg.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Online images not loading",
+          "item": "https://zizeg.app/guides/markdown-remote-images-not-loading/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="guide-page">
+<a class="guide-skip" href="#main-content">Skip to guide</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#screenshots">Screenshots</a></li>
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/guides/" aria-current="true">Guides</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+    <a class="app-store-link app-store-nav-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store">
+      <img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" />
+    </a>
+  </div>
+</nav>
+<main id="main-content">
+<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Online images not loading</span></nav><p class="eyebrow">Find the cause before changing the setting</p><h1>An online image.<br /><em>A missing picture.</em></h1><p class="guide-lead">Check whether the picture needs approval, a working URL, or a local replacement.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>First check whether the image URL starts with <strong>https://</strong> or <strong>http://</strong>. If Zizeg shows a blocked-image placeholder, approve the image when you want to load it. If it still fails, check the URL, connection, and server access. Remote-content settings cannot repair an unavailable image.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#identify">Check what the image points to</a><a href="#diagnose">Blocked or failing to load?</a><a href="#policy">Choose how remote content loads</a><a href="#url">If approval does not fix it</a><a href="#export">Check images in the exported copy</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="identify"><h2>Start with the image destination.</h2><p>Open the document in Zizeg—double-click in Finder if it is your default Markdown app. Preview (<kbd>⌘1</kbd>) shows the formatted document; Split (<kbd>⌘3</kbd>) shows Source alongside it. Your default viewing mode may already show both. Clicking the active Split control again swaps the panes.</p><div class="guide-file-example"><p class="guide-label">A remote image reference</p><pre><code>![Project chart](https://example.com/chart.png)</code></pre><p>This is an illustrative URL. The image is fetched from a server, rather than read from a folder beside the Markdown file.</p></div><p>Look at the destination in Source. An <code>https://</code> or <code>http://</code> image is remote. A path such as <code>Notes-assets/chart.png</code> is local; use the <a href="/guides/fix-markdown-images-after-moving-file/">local-image repair guide</a> for that case. A <code>data:image/…</code> destination contains embedded data and is a separate <a href="/guides/markdown-images-files-vs-base64/">image-storage choice</a>.</p></section><section id="diagnose"><h2>A blocked picture and a failed request need different fixes.</h2><div class="guide-table-wrap"><table class="guide-table"><caption>Choose the next check</caption><thead><tr><th scope="col">What you see</th><th scope="col">What to try</th></tr></thead><tbody><tr><th scope="row">“Remote image blocked. Click to load”</th><td>Check the displayed domain, then approve the picture if you want Zizeg to request it.</td></tr><tr><th scope="row">Image still fails after approval</th><td>Check the URL, connection, and whether the server returns a valid image.</td></tr><tr><th scope="row">The address leads to a webpage or sign-in screen</th><td>Use an image URL available to the app, or insert a local copy you are entitled to use.</td></tr><tr><th scope="row">The source points to a local path</th><td>Check the image file’s location and folder access instead of remote-content settings.</td></tr></tbody></table></div><p>A click-to-load placeholder is an intentional control. It does not by itself mean the Markdown is wrong or the server is unavailable. After approval, Zizeg still needs a reachable response that validates as an image.</p></section><section id="policy"><h2>Load the image you need, or choose a broader policy.</h2><p>Under <strong>Preferences → Safety → Remote content</strong>, Zizeg offers three choices:</p><ul><li><strong>Block and click to load:</strong> images start blocked; approve one from its placeholder.</li><li><strong>Always allow:</strong> request remote images without per-image approval.</li><li><strong>Ask every time:</strong> ask before loading remote content for the document.</li></ul><p>For an occasional missing picture, approving that image is usually enough. Loading it contacts the image server and can reveal that the document was opened, so check the domain before approving an unfamiliar source.</p><p>Per-image approvals last for the current editing session. Approving one occurrence also approves other occurrences of the same exact URL for that session. Seeing a blocked placeholder again after reopening can therefore be expected behavior.</p></section><section id="url"><h2>Check the URL and the server response.</h2><ol class="guide-steps"><li><strong>Check the complete image destination in Source.</strong><span>Look for a mistyped address, a copied page link, or a URL that has changed.</span></li><li><strong>Check access to the resource.</strong><span>A server may be offline, the link may have expired, or the resource may require a login. An image visible in your signed-in browser does not prove another app can fetch it.</span></li><li><strong>Try a local image when appropriate.</strong><span>If you have permission to use the picture and can obtain the file, insert it locally using paste, drag-and-drop, or Format → Image…. This removes the remote server dependency for that copy.</span></li></ol><p>See <a href="/guides/add-screenshots-to-markdown-mac/">the image insertion guide</a> for local pictures. Correcting a source reference or inserting a replacement requires editing access through a one-time unlock or an active subscription. Reading remains free.</p></section><section id="export"><h2>Preview approval is not the final sharing check.</h2><p>When exporting a document with remote images, Zizeg shows a picker for the referenced pictures. Images already approved in Preview start selected. Use <strong>Select All</strong>, <strong>Select None</strong>, or choose the individual images you want included.</p><p>Accessible selected images are embedded in the HTML or PDF output. Unchecked or failed images are not left as live remote-image URLs. Open the exported file and check that the pictures your reader needs are present.</p><p>Follow the <a href="/guides/markdown-to-standalone-html/">standalone HTML guide</a> or <a href="/guides/markdown-to-pdf-mac/">PDF export guide</a> for the full steps. Export requires a one-time unlock or an active subscription.</p><p>Ordinary web links are different: they do not fetch their target content during rendering and do not appear in the remote-image picker.</p></section></article></div>
+  <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
+    <p class="eyebrow">Give your words a picture</p>
+    <h2 id="guide-cta-title">Build the document.<br /><em>See it as you work.</em></h2>
+    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
+  </div></section>
+<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/fix-markdown-images-after-moving-file/"><span class="guide-label">Related guide</span><strong>Repair local image paths <span aria-hidden="true">→</span></strong></a><a href="/guides/markdown-to-standalone-html/"><span class="guide-label">Related guide</span><strong>Share one standalone HTML file <span aria-hidden="true">→</span></strong></a></nav>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Markdown Images: Separate Files or Base64? — Zizeg</title>
+<meta name="description" content="Compare separate image files with Base64 in Markdown, using measured sample sizes. Choose a storage format and convert a copy with Zizeg Save As." />
+<link rel="canonical" href="https://zizeg.app/guides/markdown-images-files-vs-base64/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Zizeg" />
+<meta property="og:title" content="Markdown Images: Separate Files or Base64? — Zizeg" />
+<meta property="og:description" content="Compare separate image files with Base64 in Markdown, using measured sample sizes. Choose a storage format and convert a copy with Zizeg Save As." />
+<meta property="og:url" content="https://zizeg.app/guides/markdown-images-files-vs-base64/" />
+<meta property="og:image" content="https://zizeg.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Markdown Images: Separate Files or Base64? — Zizeg" />
+<meta name="twitter:description" content="Compare separate image files with Base64 in Markdown, using measured sample sizes. Choose a storage format and convert a copy with Zizeg Save As." />
+<meta name="twitter:image" content="https://zizeg.app/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/guides/guides.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Markdown images: separate files or Base64 embedding?",
+      "description": "Compare separate image files with Base64 in Markdown, using measured sample sizes. Choose a storage format and convert a copy with Zizeg Save As.",
+      "mainEntityOfPage": "https://zizeg.app/guides/markdown-images-files-vs-base64/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zizeg.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://zizeg.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Separate images or Base64",
+          "item": "https://zizeg.app/guides/markdown-images-files-vs-base64/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="guide-page">
+<a class="guide-skip" href="#main-content">Skip to guide</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#screenshots">Screenshots</a></li>
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/guides/" aria-current="true">Guides</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+    <a class="app-store-link app-store-nav-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store">
+      <img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" />
+    </a>
+  </div>
+</nav>
+<main id="main-content">
+<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Separate images or Base64</span></nav><p class="eyebrow">Keep the files that fit your workflow</p><h1>Separate pictures.<br /><em>Or one Markdown file?</em></h1><p class="guide-lead">Choose between readable source with companion images and a single document carrying its image data.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>Use separate image files as a practical default for ongoing editing. Use Base64 when a single Markdown file matters and the receiving app supports embedded data-URI images. In Zizeg, <strong>Save As…</strong> can create a converted copy while leaving the original unchanged.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#choose">Choose by how you work</a><a href="#example">A measured example</a><a href="#tradeoffs">Sharing, diffs, and larger files</a><a href="#convert">Make a converted copy in Zizeg</a><a href="#defaults">Set the default for future images</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="choose"><h2>Use separate assets for everyday editing.</h2><p>For a document you keep revising, an assets folder is a practical default. The Markdown stays easy to read, pictures remain ordinary files, and you can replace or reuse an image without putting its encoded contents into the text.</p><p>Base64 is useful when you specifically need a single Markdown file with its images inside. Check that the recipient’s app can render data-URI images, and consider the size of the pictures before embedding a whole collection.</p><div class="guide-table-wrap"><table class="guide-table"><caption>Two ways to store the same image</caption><thead><tr><th scope="col">Consideration</th><th scope="col">Separate files</th><th scope="col">Base64 data URI</th></tr></thead><tbody><tr><th scope="row">What you move</th><td>The .md and its image folder</td><td>One .md containing the image data</td></tr><tr><th scope="row">Source readability</th><td>A short image path</td><td>A long encoded string</td></tr><tr><th scope="row">Version control</th><td>Text edits stay separate from image files</td><td>Replacing a picture changes a large source string</td></tr><tr><th scope="row">Other Markdown apps</th><td>Check relative paths travel correctly</td><td>Check data-URI image support</td></tr></tbody></table></div></section><section id="example"><h2>The same picture, with different file sizes.</h2><p>This example uses the site’s small 32 × 32 PNG icon. Both Markdown files contain the same heading, sentence, alt text, and image; only the image destination changes.</p><div class="guide-file-example"><p class="guide-label">Separate image</p><pre><code>![Zizeg icon](sample-icon.png)</code></pre><p>Markdown: <strong>101 bytes</strong>. PNG: <strong>3,258 bytes</strong>. Combined: <strong>3,359 bytes</strong>.</p></div><div class="guide-file-example"><p class="guide-label">Embedded image — source abbreviated</p><pre><code>![Zizeg icon](data:image/png;base64,iVBORw0KGgo…)</code></pre><p>Markdown including the embedded PNG: <strong>4,452 bytes</strong>. The actual downloadable file contains the complete data, without the ellipsis.</p></div><p>Base64 encodes every three image bytes as four text characters, with padding when needed. Here, 3,258 PNG bytes become 4,344 Base64 characters, plus the Markdown and data-URI prefix. It packages the picture; it does not compress it.</p><p>Try the actual files: <a href="examples/separate.md" download>separate.md</a> with <a href="examples/sample-icon.png" download>sample-icon.png</a> saved beside it, or <a href="examples/embedded.md" download>embedded.md</a> on its own. These are small generated examples, not a performance benchmark for large documents.</p></section><section id="tradeoffs"><h2>One file is convenient, but the contents still matter.</h2><p>With separate images, a move can break relative paths if you leave the asset folder behind. Keep the folder structure together. The <a href="/guides/fix-markdown-images-after-moving-file/">missing-image guide</a> explains how to repair an existing mismatch.</p><p>With Base64, a large screenshot becomes a long string inside the Markdown. A source diff may show a large change when the picture is replaced, and the document carries that data every time it is opened or processed. Many large pictures can make a Markdown file less comfortable to work with.</p><p>Embedding also does not guarantee compatibility with every Markdown renderer or publishing platform. Try a small sample in the destination app before converting important documents.</p><p>If the recipient only needs to read, <a href="/guides/markdown-to-standalone-html/">standalone HTML</a> offers a single browser-readable file with embedded images, while <a href="/guides/markdown-to-pdf-mac/">PDF</a> gives them a fixed-page copy. You can keep separate assets in your editable original.</p></section><section id="convert"><h2>Try the other storage format without changing your original.</h2><ol class="guide-steps"><li><strong>Open the existing document.</strong><span>If Zizeg is your default Markdown app, double-click the .md in Finder. Check that the pictures are available before converting.</span></li><li><strong>Choose File → Save As… (⇧⌘S).</strong><span>Give the copy a distinct name or destination so it is easy to compare with the original.</span></li><li><strong>Choose Assets Folder or Base64 Data URI.</strong><span>Zizeg prepares the new copy, copies or converts accessible image data, and adjusts the new document’s references. The original remains unchanged.</span></li><li><strong>Check the copy in Preview and Source.</strong><span>Confirm that images display and inspect the reference. Try the copy in the recipient’s app if you are sharing editable Markdown.</span></li></ol><p>Use Preview (<kbd>⌘1</kbd>) or Split (<kbd>⌘3</kbd>) to inspect the formatted result. With either set as your default, the formatted view is already visible. Click the active Split control again to swap the panes.</p><div class="guide-product-note"><strong>Reading is free. Conversion is an editing workflow.</strong><p>Editing, Save As conversion, and HTML or PDF export require a one-time unlock or an active subscription.</p></div><p>The separate-file workflow also appears in <a href="/guides/edit-markdown-without-vault/#keep-copy">making a copy of a standalone Markdown document</a>.</p></section><section id="defaults"><h2>Choose a default, and keep existing files predictable.</h2><p>Under <strong>Preferences → Editor → Image storage</strong>, choose how new or mixed documents should store imported images. Documents that already use one consistent image-storage format continue using their inferred format. Changing this preference does not convert every existing document; use Save As for a converted copy.</p><p>For the insertion steps, see <a href="/guides/add-screenshots-to-markdown-mac/">adding screenshots and images</a>. If the image points to an online URL instead, see <a href="/guides/markdown-remote-images-not-loading/">troubleshooting remote images</a>.</p></section></article></div>
+  <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
+    <p class="eyebrow">Give your words a picture</p>
+    <h2 id="guide-cta-title">Build the document.<br /><em>See it as you work.</em></h2>
+    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
+  </div></section>
+<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/add-screenshots-to-markdown-mac/"><span class="guide-label">Related guide</span><strong>Add screenshots and images <span aria-hidden="true">→</span></strong></a><a href="/guides/fix-markdown-images-after-moving-file/"><span class="guide-label">Related guide</span><strong>Fix images after moving a file <span aria-hidden="true">→</span></strong></a></nav>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+</body>
+</html>

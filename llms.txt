@@ -37,6 +37,7 @@ App Store availability updated: 2026-09-23. Other product details last reviewed:
 - [How to add screenshots and images to a Markdown document on Mac](https://zizeg.app/guides/add-screenshots-to-markdown-mac/): Paste screenshots, insert image files, add alt text, and understand the companion assets folder.
 - [Markdown images: separate files or Base64 embedding?](https://zizeg.app/guides/markdown-images-files-vs-base64/): Compare separate image files with Base64 in Markdown, using measured sample sizes. Choose a storage format and convert a copy with Zizeg Save As.
 - [Why are online images missing from my Markdown preview?](https://zizeg.app/guides/markdown-remote-images-not-loading/): Fix missing online Markdown images on Mac. Distinguish blocked content from a broken URL, check Zizeg remote-image settings, and verify exported pictures.
+- [What is the YAML block at the top of a Markdown file?](https://zizeg.app/guides/markdown-yaml-front-matter/): Explain YAML metadata, edit its fields in Source, and control whether it appears in an export.
 - [Mac App Store](https://apps.apple.com/us/app/zizeg/id6800761262?mt=12): Zizeg's official download page.
 - [Markdown editor comparison](https://zizeg.app/compare): A workflow-focused comparison with Clearly, Typora, Obsidian, iA Writer, and Ferrite. Includes methodology and links to vendor documentation.
 - [Privacy Policy](https://zizeg.app/privacy): What data Zizeg does and doesn't collect.

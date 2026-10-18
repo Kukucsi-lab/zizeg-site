@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Share Markdown as a Standalone HTML File — Zizeg</title>
+<meta name="description" content="Export Markdown as one browser-readable HTML file with embedded images. Keep the source editable and send a readable copy without a separate image folder." />
+<link rel="canonical" href="https://zizeg.app/guides/markdown-to-standalone-html/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Zizeg" />
+<meta property="og:title" content="Share Markdown as a Standalone HTML File — Zizeg" />
+<meta property="og:description" content="Export Markdown as one browser-readable HTML file with embedded images. Keep the source editable and send a readable copy without a separate image folder." />
+<meta property="og:url" content="https://zizeg.app/guides/markdown-to-standalone-html/" />
+<meta property="og:image" content="https://zizeg.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Share Markdown as a Standalone HTML File — Zizeg" />
+<meta name="twitter:description" content="Export Markdown as one browser-readable HTML file with embedded images. Keep the source editable and send a readable copy without a separate image folder." />
+<meta name="twitter:image" content="https://zizeg.app/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/guides/guides.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Share Markdown as one standalone HTML file",
+      "description": "Export Markdown as one browser-readable HTML file with embedded images. Keep the source editable and send a readable copy without a separate image folder.",
+      "mainEntityOfPage": "https://zizeg.app/guides/markdown-to-standalone-html/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zizeg.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://zizeg.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Markdown to standalone HTML",
+          "item": "https://zizeg.app/guides/markdown-to-standalone-html/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="guide-page">
+<a class="guide-skip" href="#main-content">Skip to guide</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#screenshots">Screenshots</a></li>
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/guides/" aria-current="true">Guides</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+    <a class="app-store-link app-store-nav-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store">
+      <img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" />
+    </a>
+  </div>
+</nav>
+<main id="main-content">
+<header class="guide-hero"><div class="wrap">
+<nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Markdown to standalone HTML</span></nav>
+<p class="eyebrow">Browser reading, one file</p>
+<h1>One document.<br /><em>One HTML file to send.</em></h1><p class="guide-lead">Turn Markdown and its images into a readable browser document, while keeping the original file for your next edit.</p>
+<div class="guide-answer"><span class="guide-label">The quick answer</span><p>In Zizeg, choose <strong>File → Export → Export to HTML…</strong>. Accessible local images and approved remote images are embedded in the exported file, so you can send one HTML copy for browser reading. Editing and export require a one-time unlock or an active subscription.</p></div>
+</div></header>
+<div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#one-file">What standalone HTML means</a><a href="#export">Create the HTML copy</a><a href="#images-links">Embedded images and ordinary links</a><a href="#read-share">Check the recipient experience</a><a href="#choose">When HTML is the right choice</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="one-file"><h2>Give the reader one file, not a folder to assemble.</h2><p>A Markdown document may rely on a sibling image folder. Standalone HTML packages the rendered document and accessible local images into one browser-readable file. Remote images you approve for export can be embedded too.</p><div class="guide-file-example"><p class="guide-label">Before and after</p><pre><code>Before
+Project update.md
+Project update-assets/
+└── chart.png
+
+After export
+Project update.html</code></pre><p>The HTML copy contains the rendered text and embedded image data. Your original .md file and assets remain available for editing.</p></div><p>This is a file you can send, not a hosted page or a public web address. The recipient opens the downloaded HTML in a browser.</p></section><section id="export"><h2>Export the document in Zizeg.</h2><ol class="guide-steps"><li><strong>Open and check the Markdown.</strong><span>If Zizeg is your default .md app, double-click the file. Read it in Preview, or use Split to inspect the source beside it; your chosen default view opens automatically. Make sure local images appear correctly.</span></li><li><strong>Choose File → Export → Export to HTML…</strong><span>Give the new file a name and choose its destination.</span></li><li><strong>Choose what belongs in the export.</strong><span>Leave <strong>Include front matter</strong> unchecked unless the document’s metadata should be visible. If remote images are present, choose which to embed.</span></li><li><strong>Open the exported file in a browser.</strong><span>Check the headings, lists, tables, and images before sending it.</span></li></ol><div class="guide-product-note"><strong>Read for free. Unlock export when you need it.</strong><p>Opening and reading Markdown are free. Editing and HTML or PDF export require a one-time purchase or an active subscription.</p></div><p>The export uses the document currently open, including recent edits, and follows your Preview typography. It leaves the editable Markdown source in place.</p></section><section id="images-links"><h2>Know what travels inside the file.</h2><p>Accessible local images and approved remote images are embedded as data. That means a displayed chart or screenshot doesn’t have to travel as a separate asset file with the HTML copy.</p><p>Ordinary links are different. A web link still leads to its website; a link to another local document does not become an embedded copy of that document. Include separately linked files when the recipient needs them.</p><p>Unapproved or failed remote images become placeholders instead of remaining live image URLs. The export is self-contained for its rendered content and embedded images, not an archive of every linked resource.</p></section><section id="read-share"><h2>Try the exact copy you intend to send.</h2><p>Open the saved HTML, not just the original Markdown. Check that the important images and tables appear. If a local picture was missing at export time, <a href="/guides/fix-markdown-images-after-moving-file/">repair its path or replace it</a> and export again.</p><p>Some mail systems or organizations restrict HTML attachments. If the recipient cannot receive one, <a href="/guides/markdown-to-pdf-mac/">export a PDF</a> instead. Neither format requires them to install Zizeg.</p><p>The recipient can read the exported snapshot. Later edits to your .md file won’t update a copy you already sent; export and send a new version when needed.</p></section><section id="choose"><h2>Choose HTML for reading without fixed pages.</h2><p>Standalone HTML is useful for a report, handover note, or reference document someone will read in a browser. PDF is usually the clearer choice for a fixed-page deliverable or printing. Markdown is the better handoff when the recipient needs to keep editing the source.</p><p>See <a href="/guides/share-markdown-pdf-or-html/">Markdown, PDF, or HTML: which should you send?</a> for the decision table and examples.</p><p>You can have Zizeg open finished exports automatically under <strong>Preferences → Export</strong>, making the final check part of your routine.</p></section></article></div>
+  <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
+    <p class="eyebrow">Make the next handoff simpler</p>
+    <h2 id="guide-cta-title">Share the document.<br /><em>Keep the working file.</em></h2>
+    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
+  </div></section>
+<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/share-markdown-pdf-or-html/"><span class="guide-label">Related guide</span><strong>Should you send Markdown, PDF or HTML? <span aria-hidden="true">→</span></strong></a><a href="/guides/fix-markdown-images-after-moving-file/"><span class="guide-label">Related guide</span><strong>Why do Markdown images disappear after moving the file? <span aria-hidden="true">→</span></strong></a></nav>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+</body>
+</html>

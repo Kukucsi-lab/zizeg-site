@@ -120,3 +120,9 @@
 .guide-example.guide-table-example { grid-template-columns: 1fr; }
 .guide-table-example pre { overflow-x: auto; white-space: pre; }
 .guide-table-example .guide-table { font-family: var(--font-body); }
+
+/* A small report specimen illustrates export content without simulating app UI. */
+.guide-report-example { margin: 26px 0; padding: 26px; border: 1px solid var(--border-onpaper); border-radius: 12px; background: #fffdf7; }
+.guide-report-example h3 { font: 600 27px/1.25 var(--font-display); margin: 20px 0 16px; }
+.guide-report-example .guide-label { color: var(--text-onpaper-muted); }
+.guide-report-example ul { padding-left: 24px; }

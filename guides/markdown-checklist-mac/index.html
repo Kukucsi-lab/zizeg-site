@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Create and Edit a Markdown Checklist on Mac — Zizeg</title>
+<meta name="description" content="Create a Markdown task list on Mac, tick checkboxes in Zizeg Preview, and keep the checklist as a plain .md file. Includes a reusable example and syntax tips." />
+<link rel="canonical" href="https://zizeg.app/guides/markdown-checklist-mac/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Zizeg" />
+<meta property="og:title" content="Create and Edit a Markdown Checklist on Mac — Zizeg" />
+<meta property="og:description" content="Create a Markdown task list on Mac, tick checkboxes in Zizeg Preview, and keep the checklist as a plain .md file. Includes a reusable example and syntax tips." />
+<meta property="og:url" content="https://zizeg.app/guides/markdown-checklist-mac/" />
+<meta property="og:image" content="https://zizeg.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Create and Edit a Markdown Checklist on Mac — Zizeg" />
+<meta name="twitter:description" content="Create a Markdown task list on Mac, tick checkboxes in Zizeg Preview, and keep the checklist as a plain .md file. Includes a reusable example and syntax tips." />
+<meta name="twitter:image" content="https://zizeg.app/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/guides/guides.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Create and edit a Markdown checklist that stays a plain file",
+      "description": "Create a Markdown task list on Mac, tick checkboxes in Zizeg Preview, and keep the checklist as a plain .md file. Includes a reusable example and syntax tips.",
+      "mainEntityOfPage": "https://zizeg.app/guides/markdown-checklist-mac/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zizeg.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://zizeg.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Markdown checklists on Mac",
+          "item": "https://zizeg.app/guides/markdown-checklist-mac/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="guide-page">
+<a class="guide-skip" href="#main-content">Skip to guide</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#screenshots">Screenshots</a></li>
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/guides/" aria-current="true">Guides</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+    <a class="app-store-link app-store-nav-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store">
+      <img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" />
+    </a>
+  </div>
+</nav>
+<main id="main-content">
+<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Markdown checklists on Mac</span></nav><p class="eyebrow">Simple tasks. Plain Markdown.</p><h1>Make a list.<br /><em>Tick it off.</em></h1><p class="guide-lead">Keep a useful checklist with your notes or project, in a file you can read, edit, and share.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>Use <strong>- [ ]</strong> for an unfinished task and <strong>- [x]</strong> for a completed one. In Zizeg’s editable Preview, click the checkbox to tick or untick it; the change is saved in the Markdown file. Add tasks through the Task List command or type them in Source.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#start">Start with a useful checklist</a><a href="#tick">Tick tasks in Preview</a><a href="#create">Add and arrange your tasks</a><a href="#syntax">Get the spaces right</a><a href="#share">Keep or share the checklist</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="start"><h2>A few tasks. One Markdown file.</h2><p>A report review, a packing list, or a release check often needs only a short list you can tick off. A Markdown checklist keeps the task text and its checked state together in a plain <code>.md</code> file.</p><div class="guide-file-example"><p class="guide-label">A report-review checklist</p><pre><code># Before sending the report
+
+- [x] Read the opening summary
+- [ ] Confirm names and dates
+- [ ] Check the images
+- [ ] Open the exported copy
+- [ ] Send the approved version
+</code></pre></div><p><a href="examples/report-checklist.md" download>Download this checklist</a>, open it in Zizeg, and replace the tasks with your own.</p></section><section id="tick"><h2>Work through the list in its readable form.</h2><ol class="guide-steps"><li><strong>Open the checklist.</strong><span>If Zizeg is your default Markdown app, double-click the .md in Finder.</span></li><li><strong>Use Preview or Split.</strong><span>Preview (⌘1) shows the formatted list. Split (⌘3) also shows the Markdown. If either is your default viewing mode, the formatted document opens automatically.</span></li><li><strong>Click a task’s checkbox.</strong><span>Tick or untick it in Preview. Zizeg updates the task’s checked state in the Markdown and autosaves the edit.</span></li></ol><p>Click the active <strong>Split</strong> control again to swap the panes. This makes it easy to see both the list you use and the text stored in the file.</p><div class="guide-product-note"><strong>Read for free. Edit when you need to.</strong><p>Opening and reading Markdown are free. Editing and HTML or PDF export require a one-time unlock or an active subscription.</p></div></section><section id="create"><h2>Build the list in Preview or Source.</h2><p>Use the toolbar’s <strong>Style</strong> menu or the <strong>Format</strong> menu to choose <strong>Task List</strong>. Type your tasks and edit their wording directly in Preview. You can also write the task-list syntax in Source.</p><p>Use headings to separate groups such as “Before leaving” and “On arrival.” Within a list, press <kbd>Tab</kbd> to indent an item or <kbd>⇧Tab</kbd> to outdent it. Outdenting a top-level item exits the list.</p><p>For a reusable template, keep a master copy and use <strong>File → Save As…</strong> (<kbd>⇧⌘S</kbd>) for each report or trip. Untick the tasks you want to start again.</p></section><section id="syntax"><h2>A checkbox starts with a list item and a task marker.</h2><div class="guide-file-example"><p class="guide-label">Unchecked and checked</p><pre><code>- [ ] Check the images
+- [x] Read the summary</code></pre></div><p>Use a space after the hyphen, a space inside the brackets for an unfinished task, and a space before the task text. Replace the space inside the brackets with <code>x</code> to mark it complete.</p><div class="guide-file-example"><p class="guide-label">If it stays as text, check the spacing</p><pre><code>Use:    - [ ] Check the images
+Avoid:  -[]Check the images</code></pre></div><p>If the item appears as a code block, check for accidental leading indentation outside a list. If you want a nested task, keep it within the parent list’s structure.</p><p>Task lists are part of <a href="https://github.github.com/gfm/#task-list-items-extension-">GitHub Flavored Markdown</a>. Another app may display checkboxes without making them clickable, or show the source if it does not support that extension. The saved <code>[ ]</code> and <code>[x]</code> still carry the task state.</p></section><section id="share"><h2>Keep the file where the work lives.</h2><p>Store the checklist beside the report, project, or travel notes it belongs to. You can rename it, copy it, or send the Markdown to someone who needs to continue editing. No task database or workspace setup is needed.</p><p>For a snapshot someone only needs to read, export <a href="/guides/markdown-to-pdf-mac/">PDF</a> or <a href="/guides/markdown-to-standalone-html/">standalone HTML</a>. Keep the Markdown as your working checklist; ticking a task later does not update a copy you already sent.</p><p>If you are reviewing a generated plan, see <a href="/guides/review-ai-generated-markdown/">the AI Markdown review walkthrough</a> for a checklist inside a wider document.</p></section></article></div>
+  <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
+    <p class="eyebrow">From draft to done</p>
+    <h2 id="guide-cta-title">Read it clearly.<br /><em>Edit it naturally.</em></h2>
+    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
+  </div></section>
+<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/review-ai-generated-markdown/"><span class="guide-label">Related guide</span><strong>Review an AI-generated plan <span aria-hidden="true">→</span></strong></a><a href="/guides/edit-markdown-without-vault/"><span class="guide-label">Related guide</span><strong>Edit Markdown without a vault <span aria-hidden="true">→</span></strong></a></nav>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+</body>
+</html>

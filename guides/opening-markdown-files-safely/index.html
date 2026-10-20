@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Open an Unfamiliar Markdown File on Mac — Zizeg</title>
+<meta name="description" content="Read an unfamiliar Markdown file locally on Mac. Understand remote images, ordinary links, and Zizeg’s rendering controls before choosing what to load." />
+<link rel="canonical" href="https://zizeg.app/guides/opening-markdown-files-safely/" />
+<meta name="robots" content="index, follow, max-image-preview:large" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="Zizeg" />
+<meta property="og:title" content="Open an Unfamiliar Markdown File on Mac — Zizeg" />
+<meta property="og:description" content="Read an unfamiliar Markdown file locally on Mac. Understand remote images, ordinary links, and Zizeg’s rendering controls before choosing what to load." />
+<meta property="og:url" content="https://zizeg.app/guides/opening-markdown-files-safely/" />
+<meta property="og:image" content="https://zizeg.app/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Open an Unfamiliar Markdown File on Mac — Zizeg" />
+<meta name="twitter:description" content="Read an unfamiliar Markdown file locally on Mac. Understand remote images, ordinary links, and Zizeg’s rendering controls before choosing what to load." />
+<meta name="twitter:image" content="https://zizeg.app/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<link rel="stylesheet" href="/guides/guides.css" />
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Article",
+      "headline": "Is it safe to open a Markdown file someone sent you?",
+      "description": "Read an unfamiliar Markdown file locally on Mac. Understand remote images, ordinary links, and Zizeg’s rendering controls before choosing what to load.",
+      "mainEntityOfPage": "https://zizeg.app/guides/opening-markdown-files-safely/",
+      "inLanguage": "en",
+      "author": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Zizeg",
+        "url": "https://zizeg.app/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://zizeg.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Guides",
+          "item": "https://zizeg.app/guides/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Read unfamiliar Markdown",
+          "item": "https://zizeg.app/guides/opening-markdown-files-safely/"
+        }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body class="guide-page">
+<a class="guide-skip" href="#main-content">Skip to guide</a>
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li><a href="/#features">Features</a></li>
+      <li><a href="/#screenshots">Screenshots</a></li>
+      <li><a href="/compare">Compare</a></li>
+      <li><a href="/guides/" aria-current="true">Guides</a></li>
+      <li><a href="/privacy">Privacy</a></li>
+    </ul>
+    <a class="app-store-link app-store-nav-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store">
+      <img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" />
+    </a>
+  </div>
+</nav>
+<main id="main-content">
+<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Read unfamiliar Markdown</span></nav><p class="eyebrow">Read locally. Choose what to load.</p><h1>Someone sent a .md.<br /><em>Start by reading it.</em></h1><p class="guide-lead">Understand the links and images in a Markdown file, with control over the online content you load.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>Read the file locally in Zizeg and use <strong>Block and click to load</strong> for remote images when you want to approve requests individually. Preview applies rendering safety rules. Check link destinations before following them, just as you would in another document.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#read">Read locally</a><a href="#links">Know what contacts a website</a><a href="#render">Understand the rendered view</a><a href="#choose">Choose what to load and share</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="read"><h2>Open the document without uploading it to a converter.</h2><p>You can read a Markdown file in a local app such as Zizeg without sending the whole file to an online conversion service. If Zizeg is your default Markdown app, double-click the file in Finder, or choose <strong>File → Open…</strong>.</p><p>The document can still contain references to online content. Before opening an unfamiliar file in Zizeg, check <strong>Preferences → Safety → Remote content</strong> and choose <strong>Block and click to load</strong> if you want to decide which images are requested.</p></section><section id="links"><h2>An image and a link behave differently.</h2><div class="guide-file-example"><p class="guide-label">Illustrative Markdown references</p><pre><code>![Chart](https://example.com/chart.png)
+
+[Project website](https://example.com/)</code></pre></div><p>The image asks the viewer to display a resource from a server. With click-to-load enabled in Zizeg, it starts as a placeholder until you approve it. Loading it contacts that server and can reveal that the document was opened.</p><p>The ordinary website link is followed when you click it; Zizeg does not download its target just to render the text. Check the destination before following an unfamiliar link.</p><p>The example addresses above show the syntax; they are not required resources for this guide. For a picture that fails to load, see <a href="/guides/markdown-remote-images-not-loading/">remote-image troubleshooting</a>.</p></section><section id="render"><h2>Zizeg applies safety rules when it displays the document.</h2><p>Preview and exports remove or neutralize unsafe content such as scripts and event handlers. Some raw HTML is also omitted because the editor does not support it. The source remains available to inspect.</p><p>Under <strong>Preferences → Safety</strong>, you can enable <strong>Highlight sanitized and unsupported content</strong>. Amber marks content removed for safety; red marks unsupported content. These indicators help explain a rendering difference and are not included in exports.</p><p>These controls help you choose what to load and follow. They do not verify that a document’s claims or linked destinations are trustworthy.</p></section><section id="choose"><h2>Keep the choices with you.</h2><p>Use click-to-load for unfamiliar remote images, and open links when you want to visit their destinations. Local viewing avoids uploading the whole document, while your remote-content settings determine whether its online images are requested.</p><p>When exporting to <a href="/guides/markdown-to-standalone-html/">HTML</a> or <a href="/guides/markdown-to-pdf-mac/">PDF</a>, choose which remote images to include in the export picker. Open the finished copy before sharing it.</p><p>Reading is free. Editing and export require a one-time unlock or an active subscription.</p></section></article></div>
+  <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
+    <p class="eyebrow">Your document. Your workflow.</p>
+    <h2 id="guide-cta-title">Open the file.<br /><em>Keep going.</em></h2>
+    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
+  </div></section>
+<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/markdown-remote-images-not-loading/"><span class="guide-label">Related guide</span><strong>Understand remote image loading <span aria-hidden="true">→</span></strong></a><a href="/guides/open-markdown-files-on-mac/"><span class="guide-label">Related guide</span><strong>Open and read Markdown on Mac <span aria-hidden="true">→</span></strong></a></nav>
+</main>
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="/terms">Terms of Use</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" media="(prefers-color-scheme: light)" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+<title>Page not found — Zizeg</title>
+<meta name="description" content="This page doesn’t exist on zizeg.app. Go back to the Zizeg home page or browse the Markdown guides." />
+<meta name="robots" content="noindex, follow" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500;1,9..144,600&family=Sora:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="/style.css" />
+<style>
+  .nf { padding: 56px 0 72px; }
+  .nf-window {
+    max-width: 980px;
+    margin: 0 auto;
+    border: 1px solid var(--border-onink);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--ink-soft);
+    box-shadow: 0 30px 60px -30px rgba(0, 0, 0, 0.6);
+  }
+  .nf-bar {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 16px;
+    background: var(--ink-softer);
+    border-bottom: 1px solid var(--border-onink);
+  }
+  .nf-lights { display: flex; gap: 8px; }
+  .nf-lights span { width: 12px; height: 12px; border-radius: 50%; background: rgba(236, 231, 216, 0.18); }
+  .nf-name { font: 500 13px/1 var(--font-body); color: var(--text-onink-muted); }
+  .nf-modes {
+    justify-self: end;
+    display: inline-flex;
+    padding: 2px;
+    border: 1px solid var(--border-onink);
+    border-radius: 8px;
+  }
+  .nf-modes button {
+    font: 500 12px/1 var(--font-body);
+    color: var(--text-onink-muted);
+    background: none;
+    border: 0;
+    border-radius: 6px;
+    padding: 6px 10px;
+    cursor: pointer;
+  }
+  .nf-modes button[aria-pressed="true"] { background: var(--amber-soft); color: var(--text-onink); }
+
+  .nf-panes { display: grid; grid-template-columns: 1fr 1fr; min-height: 340px; }
+  .nf-window[data-mode="source"] .nf-panes,
+  .nf-window[data-mode="preview"] .nf-panes { grid-template-columns: 1fr; }
+  .nf-window[data-mode="source"] .nf-preview,
+  .nf-window[data-mode="preview"] .nf-source { display: none; }
+
+  .nf-source {
+    margin: 0;
+    padding: 28px 24px 28px 0;
+    font: 14px/1.85 var(--font-mono);
+    color: var(--text-onink);
+    counter-reset: row;
+    overflow-x: auto;
+  }
+  .nf-source span.row { display: block; min-height: 1.85em; white-space: pre-wrap; padding-left: 52px; position: relative; }
+  .nf-source span.row::before {
+    counter-increment: row;
+    content: counter(row);
+    position: absolute;
+    left: 0;
+    width: 36px;
+    text-align: right;
+    color: rgba(236, 231, 216, 0.28);
+  }
+  .nf-source .mk { color: var(--amber); }
+  .nf-source .url { color: var(--teal); }
+  .nf-source a { color: inherit; text-decoration: none; }
+  .nf-source a:hover .url { text-decoration: underline; }
+
+  .nf-preview {
+    background: var(--paper);
+    color: var(--text-onpaper);
+    padding: 34px 40px 40px;
+  }
+  .nf-preview h1 {
+    font: 600 clamp(34px, 4.6vw, 48px)/1.05 var(--font-display);
+    letter-spacing: -0.01em;
+    margin: 0 0 18px;
+  }
+  .nf-preview p { margin: 0 0 18px; max-width: 46ch; }
+  .nf-preview code {
+    font: .86em var(--font-mono);
+    background: var(--paper-dim);
+    border-radius: 4px;
+    padding: 1px 5px;
+    overflow-wrap: anywhere;
+  }
+  .nf-preview ul { margin: 0; padding-left: 22px; }
+  .nf-preview li { margin-bottom: 8px; }
+  .nf-preview a { color: var(--text-onpaper); font-weight: 600; text-underline-offset: 3px; text-decoration-color: var(--amber); text-decoration-thickness: 2px; }
+  .nf-preview a:hover { color: #0f5e48; }
+
+  @media (max-width: 760px) {
+    .nf { padding: 32px 0 48px; }
+    .nf-panes { grid-template-columns: 1fr; }
+    .nf-window[data-mode="split"] .nf-source { border-bottom: 1px solid var(--border-onink); }
+    .nf-source { padding: 20px 16px 20px 0; font-size: 13px; }
+    .nf-source span.row { padding-left: 40px; }
+    .nf-source span.row::before { width: 26px; }
+    .nf-preview { padding: 26px 22px 30px; }
+    .nf-bar { grid-template-columns: auto 1fr; }
+    .nf-name { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="nav-mark" href="/">Zizeg</a>
+    <ul class="nav-links">
+      <li class="nav-guides"><a href="/guides/">Guides</a></li>
+      <li><a href="/">Home</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="nf">
+  <div class="wrap">
+    <div class="nf-window" data-mode="split">
+      <div class="nf-bar">
+        <div class="nf-lights" aria-hidden="true"><span></span><span></span><span></span></div>
+        <span class="nf-name">404.md</span>
+        <div class="nf-modes" role="group" aria-label="View">
+          <button type="button" data-mode="preview" aria-pressed="false">Preview</button>
+          <button type="button" data-mode="split" aria-pressed="true">Split</button>
+          <button type="button" data-mode="source" aria-pressed="false">Source</button>
+        </div>
+      </div>
+      <div class="nf-panes">
+        <pre class="nf-source" aria-label="Markdown source of this page"><span class="row"><span class="mk">#</span> Page not found</span><span class="row"></span><span class="row">Nothing lives at <span class="mk">`</span><span class="nf-path">this address</span><span class="mk">`</span> on zizeg.app.</span><span class="row">It may have moved when the guides were reorganized.</span><span class="row"></span><span class="row"><span class="mk">-</span> <a href="/" tabindex="-1"><span class="mk">[</span>Back to the home page<span class="mk">](</span><span class="url">/</span><span class="mk">)</span></a></span><span class="row"><span class="mk">-</span> <a href="/guides/" tabindex="-1"><span class="mk">[</span>Browse the Markdown guides<span class="mk">](</span><span class="url">/guides/</span><span class="mk">)</span></a></span></pre>
+        <article class="nf-preview">
+          <h1>Page not found</h1>
+          <p>Nothing lives at <code class="nf-path">this address</code> on zizeg.app. It may have moved when the guides were reorganized.</p>
+          <ul>
+            <li><a href="/">Back to the home page</a></li>
+            <li><a href="/guides/">Browse the Markdown guides</a></li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <ul class="footer-links">
+      <li><a href="/guides/">Guides</a></li>
+      <li><a href="/">Home</a></li>
+      <li><a href="/privacy">Privacy Policy</a></li>
+      <li><a href="mailto:support@zizeg.app">Support</a></li>
+    </ul>
+    <span class="footer-copy">© 2026 Zizeg</span>
+  </div>
+</footer>
+
+<script>
+  (function () {
+    var path = location.pathname;
+    if (path && path !== '/' && path.length < 80) {
+      document.querySelectorAll('.nf-path').forEach(function (el) { el.textContent = path; });
+    }
+    var win = document.querySelector('.nf-window');
+    var buttons = win.querySelectorAll('.nf-modes button');
+    buttons.forEach(function (b) {
+      b.addEventListener('click', function () {
+        win.dataset.mode = b.dataset.mode;
+        buttons.forEach(function (o) { o.setAttribute('aria-pressed', String(o === b)); });
+      });
+    });
+  })();
+</script>
+
+<!-- Cloudflare Web Analytics -->
+<script type='module' src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "4dfc36e095bb4c2c9e097d87b8ebf53c"}'></script>
+<!-- End Cloudflare Web Analytics -->
+</body>
+</html>

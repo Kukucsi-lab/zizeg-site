@@ -9,13 +9,13 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <title>Fix Missing Markdown Images After Moving a File — Zizeg</title>
-<meta name="description" content="Repair Markdown images after a move or rename. Understand relative paths, replace missing pictures, and keep a document with its assets." />
+<meta name="description" content="Markdown images missing after moving the file? Put the image folder back, fix the relative path, or pick a replacement picture in Zizeg." />
 <link rel="canonical" href="https://zizeg.app/guides/fix-markdown-images-after-moving-file/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zizeg" />
 <meta property="og:title" content="Fix Missing Markdown Images After Moving a File — Zizeg" />
-<meta property="og:description" content="Repair Markdown images after a move or rename. Understand relative paths, replace missing pictures, and keep a document with its assets." />
+<meta property="og:description" content="Markdown images missing after moving the file? Put the image folder back, fix the relative path, or pick a replacement picture in Zizeg." />
 <meta property="og:url" content="https://zizeg.app/guides/fix-markdown-images-after-moving-file/" />
 <meta property="og:image" content="https://zizeg.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -23,7 +23,7 @@
 <meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Fix Missing Markdown Images After Moving a File — Zizeg" />
-<meta name="twitter:description" content="Repair Markdown images after a move or rename. Understand relative paths, replace missing pictures, and keep a document with its assets." />
+<meta name="twitter:description" content="Markdown images missing after moving the file? Put the image folder back, fix the relative path, or pick a replacement picture in Zizeg." />
 <meta name="twitter:image" content="https://zizeg.app/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,8 +36,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Why do Markdown images disappear after moving the file?",
-      "description": "Repair Markdown images after a move or rename. Understand relative paths, replace missing pictures, and keep a document with its assets.",
+      "headline": "Fix Missing Markdown Images After Moving a File",
+      "description": "Markdown images missing after moving the file? Put the image folder back, fix the relative path, or pick a replacement picture in Zizeg.",
       "mainEntityOfPage": "https://zizeg.app/guides/fix-markdown-images-after-moving-file/",
       "inLanguage": "en",
       "author": {
@@ -49,7 +49,8 @@
         "@type": "Organization",
         "name": "Zizeg",
         "url": "https://zizeg.app/"
-      }
+      },
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -69,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Fix images after moving a file",
+          "name": "Fix Missing Markdown Images After Moving a File",
           "item": "https://zizeg.app/guides/fix-markdown-images-after-moving-file/"
         }
       ]
@@ -78,7 +79,7 @@
 }
 </script>
 </head>
-<body class="guide-page">
+<body class="guide-page guide-short">
 <a class="guide-skip" href="#main-content">Skip to guide</a>
 <nav class="nav">
   <div class="wrap">
@@ -96,27 +97,27 @@
   </div>
 </nav>
 <main id="main-content">
-<header class="guide-hero"><div class="wrap">
-<nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Fix images after moving a file</span></nav>
-<p class="eyebrow">Images that travel with the document</p>
-<h1>Moved the file.<br /><em>Lost the pictures?</em></h1><p class="guide-lead">The Markdown may still be intact. Often, the image is simply no longer where its link says it should be.</p>
-<div class="guide-answer"><span class="guide-label">The quick answer</span><p>If the document uses separate image files, move its asset folder with the <strong>.md</strong> and preserve their relative paths. If the files are already separated, fix the path in Source or click Zizeg’s broken-image placeholder to choose a replacement. Check folder access if the image exists but cannot be read.</p></div>
-</div></header>
-<div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#relative-path">What the image link means</a><a href="#repair">Three ways to repair it</a><a href="#permissions">Check access as well as paths</a><a href="#rename">Moving and renaming are different</a><a href="#copy">Make a portable copy</a><a href="#share">When the recipient only needs to read</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="relative-path"><h2>The image may not be inside the Markdown file.</h2><p>A common Markdown image reference points to a separate file. If you are adding a new picture, start with <a href="/guides/add-screenshots-to-markdown-mac/">the screenshot and image insertion guide</a>. The path is often relative to the folder containing the <code>.md</code> document.</p><div class="guide-file-example"><p class="guide-label">A working document and image</p><pre><code>Project/
-├── Notes.md
-└── Notes-assets/
-    └── chart.png
-
-In Notes.md:
-![Project chart](Notes-assets/chart.png)</code></pre><p>The path says: start beside Notes.md, open Notes-assets, then read chart.png.</p></div><p>If you move only <code>Notes.md</code> into another folder, that relative location no longer contains the picture. The source text can be intact even though the rendered image disappears.</p></section><section id="repair"><h2>Put the path and the actual file back together.</h2><ol class="guide-steps"><li><strong>Move the document and its image folder together.</strong><span>If you still have the original assets, put the .md and its companion folder in the same relationship as before. Keep the folder name used in the image link.</span></li><li><strong>Correct the path in Source.</strong><span>Switch to Source (<kbd>⌘2</kbd>), or Split (<kbd>⌘3</kbd>) to keep Preview visible. Update the image reference to match the picture’s actual location.</span></li><li><strong>Choose a replacement in Zizeg.</strong><span>A missing or unreadable local image appears as a broken-image placeholder. Click it and choose the correct image file; Zizeg updates the reference.</span></li></ol><p>Use the option that matches what happened. You don’t need to reorganize a shared image collection just to repair one document.</p><div class="guide-product-note"><strong>Reading is free; repairs are edits.</strong><p>Changing source or replacing an image reference requires editing to be unlocked, through a Lifetime Unlock or an active subscription.</p></div></section><section id="permissions"><h2>The file can be present but unreadable.</h2><p>If the image exists at the expected path, check whether Zizeg has access to its folder. macOS may ask you to approve the document’s containing folder so the app can work with sibling assets.</p><p>Also check that a cloud-stored image is actually available on the Mac. A correct path cannot display a picture that has not downloaded or is no longer accessible.</p><p>A web image is a different case. If the reference starts with <code>https://</code> or <code>http://</code>, moving the .md may not be the cause. Check the URL, connection, and the app’s remote-content policy rather than looking for a sibling image file.</p><p>If the source is an online URL, follow <a href="/guides/markdown-remote-images-not-loading/">the remote-image troubleshooting guide</a> to distinguish approval from URL or server problems.</p></section><section id="rename"><h2>Rename the document without losing its assets.</h2><p>When you rename a document in Zizeg using the filename control in the window title bar, an assets folder that belongs to the document is renamed too, and its relative image references are updated.</p><p>After a Finder rename, Zizeg can offer to rename the owned assets folder and update the links when they no longer match. External or shared folders are not changed automatically.</p><p>Moving to a different directory still requires preserving or updating the file relationships. Rename handling is not a promise that every arbitrary move repairs every image automatically.</p></section><section id="copy"><h2>Use Save As when creating another version.</h2><p>Choose <strong>File → Save As…</strong> (<kbd>⇧⌘S</kbd>) and choose the new location. The panel lets you use Assets Folder or Base64 Data URI image storage. Zizeg can copy or convert accessible images and adjust the new document’s references while leaving the original unchanged.</p><p>Assets keep images as separate files; Base64 embeds them into a larger Markdown source file. For a simple editable handoff, keeping the document and its asset folder together is often the easiest structure to understand.</p><p>For a worked size comparison and the Save As conversion steps, see <a href="/guides/markdown-images-files-vs-base64/">Markdown images: separate files or Base64 embedding?</a></p></section><section id="share"><h2>Send a packaged reading copy instead.</h2><p>If your recipient doesn’t need the source, you can avoid the Markdown-and-assets handoff. <a href="/guides/markdown-to-standalone-html/">Standalone HTML</a> embeds accessible local and approved remote images into a browser-readable file. <a href="/guides/markdown-to-pdf-mac/">PDF</a> gives them a fixed-page document.</p><p>Fix missing pictures before exporting, then open the exported copy and check it. Export cannot reconstruct an image that is no longer available.</p><p>For the broader choice, see <a href="/guides/share-markdown-pdf-or-html/">which format to send</a>.</p></section></article></div>
+  <header class="guide-hero"><div class="wrap">
+    <nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Fix Missing Markdown Images After Moving a File</span></nav>
+    <p class="eyebrow">Put the path back together</p>
+    <h1>Moved the file.<br /><em>Lost the pictures?</em></h1>
+    <div class="guide-answer"><span class="guide-label">The quick answer</span><p>Markdown images often live in separate files. Keep the image folder with the .md and preserve their relative paths. In Zizeg, correct a path in Source or click a broken-image placeholder to choose a replacement.</p></div>
+  </div></header>
+  <div class="wrap guide-layout"><article class="guide-article">
+    <section aria-labelledby="topic-points"><h2 id="topic-points">Find the picture, then the fix.</h2><ul class="guide-points">
+<li><strong>Keep the companions together.</strong> A reference such as <code>Notes-assets/chart.png</code> expects that folder beside <code>Notes.md</code>. Moving only the Markdown can break the link.</li>
+<li><strong>Check access as well as location.</strong> Approve the containing folder when macOS asks, and make sure a cloud-stored picture is downloaded to your Mac.</li>
+<li><strong>Repair or make a new copy.</strong> Choose the replacement picture from Zizeg’s placeholder. Use Save As… when preparing a new version with adjusted image references.</li>
+    </ul></section>
+    <figure class="guide-screenshot"><a class="guide-screenshot-full" href="/screenshots/markdown-image-relative-assets-path.png" aria-label="View screenshot at full size"><img src="/screenshots/markdown-image-relative-assets-path.png" width="1800" height="714" loading="lazy" alt="The image path points to a companion assets folder." /></a><figcaption>The image path points to a companion assets folder.</figcaption></figure>
+    <nav class="guide-related" aria-label="Related topics"><span class="guide-label">Related</span><p><a href="/guides/add-screenshots-to-markdown-mac/">Add Screenshots and Images to Markdown on Mac</a> · <a href="/guides/markdown-remote-images-not-loading/">Remote Markdown Images Not Loading? What to Check</a></p></nav>
+  </article></div>
   <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
-    <p class="eyebrow">Make the next handoff simpler</p>
-    <h2 id="guide-cta-title">Share the document.<br /><em>Keep the working file.</em></h2>
-    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
-    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <h2 id="guide-cta-title">Try it with your Markdown.</h2>
+    <p>Open a familiar file and see both views in Zizeg.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a></div>
     <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
   </div></section>
-<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/markdown-to-standalone-html/"><span class="guide-label">Related guide</span><strong>Share Markdown as one standalone HTML file <span aria-hidden="true">→</span></strong></a><a href="/guides/share-markdown-pdf-or-html/"><span class="guide-label">Related guide</span><strong>Should you send Markdown, PDF or HTML? <span aria-hidden="true">→</span></strong></a></nav>
 </main>
 <footer class="footer">
   <div class="wrap">

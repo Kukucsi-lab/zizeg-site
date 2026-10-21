@@ -8,22 +8,22 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<title>Change the Default App for Markdown (.md) Files on Mac — Zizeg</title>
-<meta name="description" content="Make .md files open in your preferred Mac app. Change the default in Finder or Zizeg, and choose Preview or Split for formatted reading." />
+<title>Change the Default Markdown App on Mac — Zizeg</title>
+<meta name="description" content="Markdown files opening in Xcode or TextEdit? Change the default app for .md files on Mac in Finder, or with one click in Zizeg’s preferences." />
 <link rel="canonical" href="https://zizeg.app/guides/change-default-markdown-app-mac/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zizeg" />
-<meta property="og:title" content="Change the Default App for Markdown (.md) Files on Mac — Zizeg" />
-<meta property="og:description" content="Make .md files open in your preferred Mac app. Change the default in Finder or Zizeg, and choose Preview or Split for formatted reading." />
+<meta property="og:title" content="Change the Default Markdown App on Mac — Zizeg" />
+<meta property="og:description" content="Markdown files opening in Xcode or TextEdit? Change the default app for .md files on Mac in Finder, or with one click in Zizeg’s preferences." />
 <meta property="og:url" content="https://zizeg.app/guides/change-default-markdown-app-mac/" />
 <meta property="og:image" content="https://zizeg.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Change the Default App for Markdown (.md) Files on Mac — Zizeg" />
-<meta name="twitter:description" content="Make .md files open in your preferred Mac app. Change the default in Finder or Zizeg, and choose Preview or Split for formatted reading." />
+<meta name="twitter:title" content="Change the Default Markdown App on Mac — Zizeg" />
+<meta name="twitter:description" content="Markdown files opening in Xcode or TextEdit? Change the default app for .md files on Mac in Finder, or with one click in Zizeg’s preferences." />
 <meta name="twitter:image" content="https://zizeg.app/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,8 +36,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Markdown files open in the wrong app? Change the default on Mac",
-      "description": "Make .md files open in your preferred Mac app. Change the default in Finder or Zizeg, and choose Preview or Split for formatted reading.",
+      "headline": "Change the Default Markdown App on Mac",
+      "description": "Markdown files opening in Xcode or TextEdit? Change the default app for .md files on Mac in Finder, or with one click in Zizeg’s preferences.",
       "mainEntityOfPage": "https://zizeg.app/guides/change-default-markdown-app-mac/",
       "inLanguage": "en",
       "author": {
@@ -49,7 +49,8 @@
         "@type": "Organization",
         "name": "Zizeg",
         "url": "https://zizeg.app/"
-      }
+      },
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -69,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Change the default Markdown app",
+          "name": "Change the Default Markdown App on Mac",
           "item": "https://zizeg.app/guides/change-default-markdown-app-mac/"
         }
       ]
@@ -78,7 +79,7 @@
 }
 </script>
 </head>
-<body class="guide-page">
+<body class="guide-page guide-short">
 <a class="guide-skip" href="#main-content">Skip to guide</a>
 <nav class="nav">
   <div class="wrap">
@@ -96,21 +97,27 @@
   </div>
 </nav>
 <main id="main-content">
-<header class="guide-hero"><div class="wrap">
-<nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Change the default Markdown app</span></nav>
-<p class="eyebrow">Make double-click work for you</p>
-<h1>Markdown opens in the wrong app?<br /><em>Change the default.</em></h1><p class="guide-lead">Double-click a .md file and get Xcode, TextEdit, or another editor? Choose the app you actually want to read it in.</p>
-<div class="guide-answer"><span class="guide-label">The quick answer</span><p>In Finder, select a <code>.md</code> file, open <strong>Get Info</strong> (<kbd>⌘I</kbd>), choose your app under <strong>Open with</strong>, then click <strong>Change All…</strong>. To choose Zizeg directly, use <strong>Zizeg → Preferences… → General → Set as Default App for .md Files</strong>.</p></div>
-</div></header>
-<div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#open-once">Open it once</a><a href="#finder-default">Change the default in Finder</a><a href="#zizeg-default">Use Zizeg’s shortcut</a><a href="#default-view">Choose the opening view</a><a href="#still-wrong">If the wrong app still opens</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="open-once"><h2>Need to open it just this once?</h2><p>Control-click the <code>.md</code> file in Finder, choose <strong>Open With</strong>, and select Zizeg. You can also open Zizeg first and choose <strong>File → Open…</strong>.</p><p>This is useful when you want to try another reader without changing your usual setup. To make double-clicking use the same app next time, change the default for the file type.</p></section><section id="finder-default"><h2>Make your choice stick in Finder.</h2><p>Finder can set your preferred app for files of the same type. Start with an ordinary <code>.md</code> file.</p><ol class="guide-steps"><li><strong>Select the file and open Get Info.</strong><span>Choose <strong>File → Get Info</strong>, or press <kbd>⌘I</kbd>.</span></li><li><strong>Find Open with.</strong><span>Expand the <strong>Open with</strong> section and select the app you want to use.</span></li><li><strong>Apply it to the file type.</strong><span>Click <strong>Change All…</strong> and confirm if prompted. This applies the choice to matching files, rather than only the selected document.</span></li><li><strong>Try double-clicking a Markdown file.</strong><span>It should now open in the app you chose.</span></li></ol><div class="guide-product-note"><strong>One file or every file?</strong><p>Leave out Change All if you only want to change the selected file’s association. Use Change All when you want this to be your normal app for that file type.</p></div></section><section id="zizeg-default"><h2>Or set Zizeg as the default from the app.</h2><p>In Zizeg, choose <strong>Zizeg → Preferences… → General</strong>, then click <strong>Set as Default App for .md Files</strong>. After that, double-click a <code>.md</code> file in Finder to open it in Zizeg.</p><p>You don’t need to import the document or move it into a library. Zizeg opens the ordinary Markdown file where it already lives.</p><p>New to the format? Our <a href="/guides/open-markdown-files-on-mac/">guide to opening and reading Markdown</a> shows what you’ll see in Preview and Source.</p></section><section id="default-view"><h2>The app and the view are two separate choices.</h2><p>Your Mac decides <em>which app</em> opens the file. Zizeg’s default view decides <em>how a newly opened document appears</em>.</p><p>Under <strong>Preferences → General → Default view for new tabs</strong>, choose <strong>Preview</strong> for the formatted document, <strong>Split</strong> for formatting and source together, or <strong>Source</strong> for raw Markdown.</p><p>With Preview or Split selected, the formatted view appears when you open a new document—there’s no need to choose it each time.</p><div class="guide-product-note"><strong>Reading is free in every view.</strong><p>Editing and HTML or PDF export require a Lifetime Unlock or an active subscription.</p></div></section><section id="still-wrong"><h2>Still opening somewhere else?</h2><ul><li><strong>Check the extension.</strong> A <code>.markdown</code> file may have a different association from a <code>.md</code> file. Repeat the Finder steps for the type you actually use.</li><li><strong>Check the scope.</strong> Choosing an app for one file is different from using <strong>Change All</strong>.</li><li><strong>Check the app is installed.</strong> If you don’t see Zizeg in the choices, open it from Applications first.</li><li><strong>Try opening from inside the app.</strong> If <strong>File → Open…</strong> works, you can read the document while sorting out the Finder association.</li></ul><p>You can switch back to another default app using the same Finder steps. Changing the association does not convert the file or change its contents.</p><p class="guide-reference">Finder instructions: <a href="https://support.apple.com/en-gb/guide/mac-help/mh35597/mac">Apple’s guide to choosing an app to open a file</a>.</p></section></article></div>
+  <header class="guide-hero"><div class="wrap">
+    <nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Change the Default Markdown App on Mac</span></nav>
+    <p class="eyebrow">Make double-click work for you</p>
+    <h1>The wrong app opens?<br /><em>Choose your Markdown reader.</em></h1>
+    <div class="guide-answer"><span class="guide-label">The quick answer</span><p>If a .md opens in Xcode, TextEdit or another app, change its default in Finder: Get Info → Open with → Change All…. Zizeg also has a default-app button in Preferences → General.</p></div>
+  </div></header>
+  <div class="wrap guide-layout"><article class="guide-article">
+    <section aria-labelledby="topic-points"><h2 id="topic-points">Choose once. Open naturally.</h2><ul class="guide-points">
+<li><strong>Try Zizeg without switching.</strong> Control-click a Markdown file and choose Open With → Zizeg, or use File → Open… inside the app.</li>
+<li><strong>Make it the default.</strong> In Zizeg, choose Preferences → General → Set as Default App for .md Files. Then try double-clicking a .md.</li>
+<li><strong>Use Finder for another file type.</strong> Select a .markdown file, press ⌘I, choose the app under Open with, then Change All…. This changes the association, not the document.</li>
+    </ul></section>
+    <figure class="guide-screenshot"><img src="/screenshots/shot-08-preferences.png" width="1400" height="596" loading="lazy" alt="The default-app button is in Zizeg’s General preferences." /><figcaption>The default-app button is in Zizeg’s General preferences.</figcaption></figure>
+    <nav class="guide-related" aria-label="Related topics"><span class="guide-label">Related</span><p><a href="/guides/open-markdown-files-on-mac/">Open and Read Markdown Files on Mac</a> · <a href="/guides/editable-markdown-preview-vs-split-view/">Editable Markdown Preview vs Split Preview</a></p></nav>
+  </article></div>
   <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
-    <p class="eyebrow">Open your next .md file</p>
-    <h2 id="guide-cta-title">Read the document.<br /><em>Keep the plain file.</em></h2>
-    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
-    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <h2 id="guide-cta-title">Try it with your Markdown.</h2>
+    <p>Open a familiar file and see both views in Zizeg.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a></div>
     <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
   </div></section>
-<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/open-markdown-files-on-mac/"><span class="guide-label">Related guide</span><strong>How to open and read Markdown (.md) files on a Mac <span aria-hidden="true">→</span></strong></a><a href="/guides/edit-markdown-without-vault/"><span class="guide-label">Related guide</span><strong>Edit a standalone Markdown file without a vault or workspace <span aria-hidden="true">→</span></strong></a></nav>
 </main>
 <footer class="footer">
   <div class="wrap">

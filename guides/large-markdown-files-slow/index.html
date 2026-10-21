@@ -8,22 +8,22 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<title>Why Large Markdown Files Get Slow — Zizeg</title>
-<meta name="description" content="Understand what makes Markdown files heavy. Try Source view, recognize staged Preview loading, and reduce embedded image data when it suits the document." />
+<title>Large Markdown Files Slow? What to Try on Mac — Zizeg</title>
+<meta name="description" content="Large Markdown file slow to open? See what makes it heavy, edit in Zizeg’s Source while Preview loads, and slim down embedded images." />
 <link rel="canonical" href="https://zizeg.app/guides/large-markdown-files-slow/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zizeg" />
-<meta property="og:title" content="Why Large Markdown Files Get Slow — Zizeg" />
-<meta property="og:description" content="Understand what makes Markdown files heavy. Try Source view, recognize staged Preview loading, and reduce embedded image data when it suits the document." />
+<meta property="og:title" content="Large Markdown Files Slow? What to Try on Mac — Zizeg" />
+<meta property="og:description" content="Large Markdown file slow to open? See what makes it heavy, edit in Zizeg’s Source while Preview loads, and slim down embedded images." />
 <meta property="og:url" content="https://zizeg.app/guides/large-markdown-files-slow/" />
 <meta property="og:image" content="https://zizeg.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Why Large Markdown Files Get Slow — Zizeg" />
-<meta name="twitter:description" content="Understand what makes Markdown files heavy. Try Source view, recognize staged Preview loading, and reduce embedded image data when it suits the document." />
+<meta name="twitter:title" content="Large Markdown Files Slow? What to Try on Mac — Zizeg" />
+<meta name="twitter:description" content="Large Markdown file slow to open? See what makes it heavy, edit in Zizeg’s Source while Preview loads, and slim down embedded images." />
 <meta name="twitter:image" content="https://zizeg.app/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,8 +36,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Why large Markdown files get slow—and what to try",
-      "description": "Understand what makes Markdown files heavy. Try Source view, recognize staged Preview loading, and reduce embedded image data when it suits the document.",
+      "headline": "Large Markdown Files Slow? What to Try on Mac",
+      "description": "Large Markdown file slow to open? See what makes it heavy, edit in Zizeg’s Source while Preview loads, and slim down embedded images.",
       "mainEntityOfPage": "https://zizeg.app/guides/large-markdown-files-slow/",
       "inLanguage": "en",
       "author": {
@@ -49,7 +49,8 @@
         "@type": "Organization",
         "name": "Zizeg",
         "url": "https://zizeg.app/"
-      }
+      },
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -69,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Large Markdown files",
+          "name": "Large Markdown Files Slow? What to Try on Mac",
           "item": "https://zizeg.app/guides/large-markdown-files-slow/"
         }
       ]
@@ -78,7 +79,7 @@
 }
 </script>
 </head>
-<body class="guide-page">
+<body class="guide-page guide-short">
 <a class="guide-skip" href="#main-content">Skip to guide</a>
 <nav class="nav">
   <div class="wrap">
@@ -96,15 +97,27 @@
   </div>
 </nav>
 <main id="main-content">
-<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Large Markdown files</span></nav><p class="eyebrow">Work with the content that matters</p><h1>A heavy Markdown file.<br /><em>A few things to try.</em></h1><p class="guide-lead">Check the images and structure, choose a useful editing view, and keep the document manageable.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>Check whether the file contains large embedded images, tables, or code blocks. Use <strong>Source</strong> for direct text edits while Preview loads. If embedded pictures make the file heavy, try an Assets Folder copy through <strong>Save As…</strong>.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#weight">Check what makes the file large</a><a href="#source">Use the view that suits the task</a><a href="#loading">Let Preview finish loading</a><a href="#reduce">Reduce the weight where it helps</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="weight"><h2>File size is more than word count.</h2><p>A long report made mostly of text is different from a short note carrying many embedded screenshots. Base64 image data lives inside the Markdown itself; big tables and long code blocks can also add work when the document is rendered.</p><p>In Finder, use <strong>Get Info</strong> to check the file size. Then inspect Source for long <code>data:image/…;base64,</code> references or unusually large blocks. See <a href="/guides/markdown-images-files-vs-base64/">the image-storage comparison</a> for a measured example of embedded-data overhead.</p></section><section id="source"><h2>For a text correction, try Source.</h2><p>Open the file in Zizeg—double-click it if Zizeg is your default Markdown app. Choose <strong>Source</strong> (<kbd>⌘2</kbd>) when you want to work directly with the Markdown text, or <strong>Split</strong> (<kbd>⌘3</kbd>) when the rendered result is useful alongside it.</p><p>If Split is your default viewing mode, both panes open automatically. For a small wording change, you can edit in Source and check Preview when it is ready.</p></section><section id="loading"><h2>Large documents can appear in stages.</h2><p>Zizeg can show the beginning of Preview while the rest loads. During that process, Preview is temporarily read-only and synchronized scrolling is paused. Source remains editable, and its changes appear in Preview when loading finishes.</p><p>Files with reference-style link or footnote definitions, or one very long code block, may need to load fully before Preview is ready. The time depends on the content and your Mac, so file size alone does not predict the experience.</p></section><section id="reduce"><h2>Keep the content you need in a manageable form.</h2><ul><li>For image-heavy files, consider separate image assets instead of embedding every picture in the Markdown.</li><li>Resize oversized screenshots before adding them if the document only needs a smaller image.</li><li>Break up a very large table or code block when separate sections make it easier to use.</li><li>Split a document into related files when they are genuinely separate topics.</li></ul><p>To try another image-storage format, use <strong>File → Save As…</strong> (<kbd>⇧⌘S</kbd>) and choose Assets Folder or Base64 Data URI. Zizeg prepares the converted copy without changing the original. Editing and export require a Lifetime Unlock or an active subscription; reading is free.</p><p>If the file is easy to open but hard to navigate, start with <a href="/guides/navigate-long-markdown-document/">headings, the outline, and Find</a>.</p></section></article></div>
+  <header class="guide-hero"><div class="wrap">
+    <nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Large Markdown Files Slow? What to Try on Mac</span></nav>
+    <p class="eyebrow">Keep the useful content manageable</p>
+    <h1>A heavy Markdown file.<br /><em>A few things to try.</em></h1>
+    <div class="guide-answer"><span class="guide-label">The quick answer</span><p>Large embedded images, tables and code blocks can make Markdown heavy. Use Zizeg’s Source view for text edits while Preview loads, and try separate image assets when Base64 pictures make the source unwieldy.</p></div>
+  </div></header>
+  <div class="wrap guide-layout"><article class="guide-article">
+    <section aria-labelledby="topic-points"><h2 id="topic-points">Look beyond the word count.</h2><ul class="guide-points">
+<li><strong>Check the images.</strong> Long <code class="md-token">data:image</code> references store picture data inside the Markdown. Save As… can create an Assets Folder copy without changing the original.</li>
+<li><strong>Keep editing in Source.</strong> Large documents can appear in stages. Preview is read-only until loading finishes, while Source remains available.</li>
+<li><strong>Consider the structure.</strong> Reference definitions or one very long code block can require a full load. For navigation rather than loading, use headings, the outline and Find.</li>
+    </ul></section>
+    <figure class="guide-screenshot"><img src="/screenshots/shot-05-toc.png" width="1400" height="886" loading="lazy" alt="Use the outline to navigate an already loaded document." /><figcaption>Use the outline to navigate an already loaded document.</figcaption></figure>
+    <nav class="guide-related" aria-label="Related topics"><span class="guide-label">Related</span><p><a href="/guides/markdown-images-files-vs-base64/">Markdown Images: Separate Files or Base64?</a> · <a href="/guides/navigate-long-markdown-document/">Navigate Long Markdown Documents on Mac</a></p></nav>
+  </article></div>
   <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
-    <p class="eyebrow">Your document. Your workflow.</p>
-    <h2 id="guide-cta-title">Open the file.<br /><em>Keep going.</em></h2>
-    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
-    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <h2 id="guide-cta-title">Try it with your Markdown.</h2>
+    <p>Open a familiar file and see both views in Zizeg.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a></div>
     <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
   </div></section>
-<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/markdown-images-files-vs-base64/"><span class="guide-label">Related guide</span><strong>Compare image storage choices <span aria-hidden="true">→</span></strong></a><a href="/guides/navigate-long-markdown-document/"><span class="guide-label">Related guide</span><strong>Navigate a long document <span aria-hidden="true">→</span></strong></a></nav>
 </main>
 <footer class="footer">
   <div class="wrap">

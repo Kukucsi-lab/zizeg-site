@@ -9,13 +9,13 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <title>What Is YAML Front Matter in Markdown? — Zizeg</title>
-<meta name="description" content="Understand YAML front matter in Markdown. Read a title, date and tags example, edit metadata in Zizeg Source, and choose whether it appears in PDF or HTML exports." />
+<meta name="description" content="What is the YAML block at the top of a Markdown file? Learn what front matter does, edit it in Zizeg’s Source, and keep it out of exports." />
 <link rel="canonical" href="https://zizeg.app/guides/markdown-yaml-front-matter/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zizeg" />
 <meta property="og:title" content="What Is YAML Front Matter in Markdown? — Zizeg" />
-<meta property="og:description" content="Understand YAML front matter in Markdown. Read a title, date and tags example, edit metadata in Zizeg Source, and choose whether it appears in PDF or HTML exports." />
+<meta property="og:description" content="What is the YAML block at the top of a Markdown file? Learn what front matter does, edit it in Zizeg’s Source, and keep it out of exports." />
 <meta property="og:url" content="https://zizeg.app/guides/markdown-yaml-front-matter/" />
 <meta property="og:image" content="https://zizeg.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -23,7 +23,7 @@
 <meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="What Is YAML Front Matter in Markdown? — Zizeg" />
-<meta name="twitter:description" content="Understand YAML front matter in Markdown. Read a title, date and tags example, edit metadata in Zizeg Source, and choose whether it appears in PDF or HTML exports." />
+<meta name="twitter:description" content="What is the YAML block at the top of a Markdown file? Learn what front matter does, edit it in Zizeg’s Source, and keep it out of exports." />
 <meta name="twitter:image" content="https://zizeg.app/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,8 +36,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "What is the YAML block at the top of a Markdown file?",
-      "description": "Understand YAML front matter in Markdown. Read a title, date and tags example, edit metadata in Zizeg Source, and choose whether it appears in PDF or HTML exports.",
+      "headline": "What Is YAML Front Matter in Markdown?",
+      "description": "What is the YAML block at the top of a Markdown file? Learn what front matter does, edit it in Zizeg’s Source, and keep it out of exports.",
       "mainEntityOfPage": "https://zizeg.app/guides/markdown-yaml-front-matter/",
       "inLanguage": "en",
       "author": {
@@ -49,7 +49,8 @@
         "@type": "Organization",
         "name": "Zizeg",
         "url": "https://zizeg.app/"
-      }
+      },
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -69,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "YAML front matter",
+          "name": "What Is YAML Front Matter in Markdown?",
           "item": "https://zizeg.app/guides/markdown-yaml-front-matter/"
         }
       ]
@@ -78,7 +79,7 @@
 }
 </script>
 </head>
-<body class="guide-page">
+<body class="guide-page guide-short">
 <a class="guide-skip" href="#main-content">Skip to guide</a>
 <nav class="nav">
   <div class="wrap">
@@ -96,24 +97,27 @@
   </div>
 </nav>
 <main id="main-content">
-<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>YAML front matter</span></nav><p class="eyebrow">Understand the opening lines</p><h1>A block above the text.<br /><em>What is it doing there?</em></h1><p class="guide-lead">Read the metadata, keep the fields that matter, and decide what your reader should see.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>A YAML block at the top of a Markdown file is usually <strong>front matter</strong>: metadata used by another app or publishing tool. Zizeg shows it separately in Preview. Use <strong>Edit in Source</strong> to change it, and leave <strong>Include front matter</strong> unchecked when you want an export containing only the document body.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#meaning">What the block is for</a><a href="#example">Read a small example</a><a href="#delimiters">Front matter or a horizontal line?</a><a href="#edit">Read and edit it in Zizeg</a><a href="#export">Decide what belongs in the export</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="meaning"><h2>It describes the document for another tool.</h2><p>YAML front matter is a metadata block at the beginning of a file. It can hold a title, date, tags, or settings used by a publishing system or another app. It belongs to the Markdown source, even when a viewer presents it separately from the body.</p><p>The fields do not all have a universal meaning. A publishing tool might use <code>title</code> for its page title, while another app ignores it. Keep unfamiliar fields until you know which tool uses them.</p><p>For a publishing example, <a href="https://jekyllrb.com/docs/front-matter/">Jekyll’s front matter documentation</a> explains how its metadata fields control the generated page. Zizeg lets you read and edit the file; it does not turn those fields into a publishing workflow automatically.</p></section><section id="example"><h2>Metadata first, document text second.</h2><div class="guide-file-example"><p class="guide-label">An example Markdown file</p><pre><code>---
-title: &quot;Project handover&quot;
-date: &quot;2026-10-18&quot;
-tags: [handover, project]
----
-
-# Project handover
-
-The draft is ready for review.
-</code></pre></div><div class="guide-table-wrap"><table class="guide-table"><caption>What each part means in this example</caption><thead><tr><th scope="col">Part</th><th scope="col">Purpose</th></tr></thead><tbody><tr><th scope="row">Opening and closing ---</th><td>Mark the boundaries of the metadata block at the top.</td></tr><tr><th scope="row">title</th><td>A metadata value that another tool may use as the document title.</td></tr><tr><th scope="row">date</th><td>A quoted date value. Its purpose depends on the receiving tool.</td></tr><tr><th scope="row">tags</th><td>A list of two labels: handover and project.</td></tr><tr><th scope="row"># Project handover</th><td>The visible heading in the Markdown body, outside the metadata.</td></tr></tbody></table></div><p>The metadata title and the body heading are separate text. Changing one does not necessarily change the other. If you want both to match, check both places.</p><p><a href="examples/front-matter.md" download>Download this small example</a> to inspect it in Zizeg.</p></section><section id="delimiters"><h2>The position and surrounding text matter.</h2><p>In Zizeg, front matter starts with a <code>---</code> line at the beginning of the file and ends with another <code>---</code> line or a <code>...</code> line. In the example, the title, date, and tags sit between those boundaries.</p><p>A line of dashes elsewhere can be ordinary Markdown: a horizontal rule, or part of a heading depending on the surrounding text. The characters alone do not tell the whole story.</p><p>If a document looks different in another app, inspect the opening lines in Source before removing anything. Different Markdown tools can treat metadata differently.</p></section><section id="edit"><h2>Read in Preview. Change the fields in Source.</h2><ol class="guide-steps"><li><strong>Open the Markdown file.</strong><span>If Zizeg is your default app for .md files, just double-click it in Finder.</span></li><li><strong>Look at the top of Preview.</strong><span>Zizeg presents the metadata in a box labeled <strong>Front matter — read-only in Preview</strong>. You can edit the document body while the front matter stays separate.</span></li><li><strong>Choose Edit in Source to change metadata.</strong><span>Or switch to Source (<kbd>⌘2</kbd>) or Split (<kbd>⌘3</kbd>) and edit the opening block directly.</span></li><li><strong>Keep the structure and check the result.</strong><span>For example, change the quoted title value while retaining the field name and delimiter lines. Keep list syntax and indentation intact when editing more complex blocks.</span></li></ol><p>With Preview or Split set as your default viewing mode, the formatted view opens automatically.</p><p>If you want to experiment with unfamiliar fields, make a separate copy with <strong>File → Save As…</strong> (<kbd>⇧⌘S</kbd>) first. See <a href="/guides/edit-markdown-without-vault/#keep-copy">working with a separate copy</a>.</p><div class="guide-product-note"><strong>Read for free. Unlock editing when you need it.</strong><p>Reading is free. Changing metadata and using HTML or PDF export require a Lifetime Unlock or an active subscription.</p></div></section><section id="export"><h2>Keep working metadata out of a reader’s copy when it adds no value.</h2><p>For a client report or a handover PDF, the recipient usually needs the document body rather than publishing fields. In Zizeg’s HTML and PDF save panels, <strong>Include front matter</strong> starts unchecked for every export.</p><p>Leave it unchecked to exclude the metadata from that exported copy. This does not delete or change the front matter in your Markdown source.</p><p>If the reader needs to see it, select <strong>Include front matter</strong> and check the finished file. Zizeg renders included front matter like ordinary Markdown, so it can look like a horizontal line followed by a heading rather than the separate metadata box shown in Preview.</p><p>For the export steps, follow <a href="/guides/markdown-to-pdf-mac/">Markdown to PDF</a> or <a href="/guides/markdown-to-standalone-html/">standalone HTML</a>. If the recipient needs to continue the publishing workflow, consider sending the Markdown source with its metadata and assets intact; the <a href="/guides/share-markdown-pdf-or-html/">format-choice guide</a> helps with that decision.</p></section></article></div>
+  <header class="guide-hero"><div class="wrap">
+    <nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>What Is YAML Front Matter in Markdown?</span></nav>
+    <p class="eyebrow">Understand the opening lines</p>
+    <h1>A block above the text.<br /><em>Keep its purpose clear.</em></h1>
+    <div class="guide-answer"><span class="guide-label">The quick answer</span><p>YAML front matter is metadata at the start of a Markdown file, often between <code class="md-token">---</code> lines. Zizeg shows it separately in Preview. Choose Edit in Source to change fields such as title, date or tags.</p></div>
+  </div></header>
+  <div class="wrap guide-layout"><article class="guide-article">
+    <section aria-labelledby="topic-points"><h2 id="topic-points">Metadata for tools. A document for readers.</h2><ul class="guide-points">
+<li><strong>Keep the fields you need.</strong> Other apps or publishing tools decide what the metadata means. A title field and the visible document heading are separate text.</li>
+<li><strong>Edit the opening block.</strong> Use Source for the fields, keeping their delimiters and indentation. Dashes elsewhere may be an ordinary divider, not metadata.</li>
+<li><strong>Choose the reader’s copy.</strong> Include front matter starts unchecked in PDF and HTML exports. Leaving it out of the export does not remove it from the Markdown.</li>
+    </ul></section>
+    <figure class="guide-screenshot"><a class="guide-screenshot-full" href="/screenshots/front-matter-edit-in-source.png" aria-label="View screenshot at full size"><img src="/screenshots/front-matter-edit-in-source.png" width="1270" height="320" loading="lazy" alt="Front matter stays separate in Preview; choose Edit in Source." /></a><figcaption>Front matter stays separate in Preview; choose Edit in Source.</figcaption></figure>
+    <nav class="guide-related" aria-label="Related topics"><span class="guide-label">Related</span><p><a href="/guides/edit-markdown-without-vault/">Edit Markdown Without a Vault or Workspace</a> · <a href="/guides/markdown-to-pdf-mac/">Export Markdown to PDF on Mac</a></p></nav>
+  </article></div>
   <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
-    <p class="eyebrow">Read the file. Understand the structure.</p>
-    <h2 id="guide-cta-title">See the document.<br /><em>Keep the source close.</em></h2>
-    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
-    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <h2 id="guide-cta-title">Try it with your Markdown.</h2>
+    <p>Open a familiar file and see both views in Zizeg.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a></div>
     <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
   </div></section>
-<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/edit-markdown-without-vault/"><span class="guide-label">Related guide</span><strong>Edit a standalone Markdown file <span aria-hidden="true">→</span></strong></a><a href="/guides/markdown-to-pdf-mac/"><span class="guide-label">Related guide</span><strong>Export Markdown to PDF <span aria-hidden="true">→</span></strong></a></nav>
 </main>
 <footer class="footer">
   <div class="wrap">

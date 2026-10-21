@@ -12,6 +12,7 @@
 .guide-hero h1 em { color: var(--amber); font-weight: 500; }
 .guide-lead { max-width: 760px; color: var(--text-onink-muted); font-size: 18px; line-height: 1.8; margin: 0; }
 .guide-page code { font: .86em var(--font-mono); overflow-wrap: anywhere; }
+.guide-page code.md-token { white-space: nowrap; overflow-wrap: normal; }
 .guide-answer { max-width: 850px; margin-top: 34px; padding: 24px 28px; border: 1px solid rgba(217,164,65,.35); border-left: 3px solid var(--amber); border-radius: 0 12px 12px 0; background: rgba(217,164,65,.06); }
 .guide-label { display: block; font: 500 11px/1.5 var(--font-mono); letter-spacing: .07em; text-transform: uppercase; }
 .guide-answer .guide-label { color: var(--amber); }
@@ -126,3 +127,32 @@
 .guide-report-example h3 { font: 600 27px/1.25 var(--font-display); margin: 20px 0 16px; }
 .guide-report-example .guide-label { color: var(--text-onpaper-muted); }
 .guide-report-example ul { padding-left: 24px; }
+
+/* Compact topic pages: shared PoC layout, without the long-guide sidebar. */
+.guide-short .guide-hero { padding-bottom: 38px; }
+.guide-short .guide-hero > .wrap { max-width: 1000px; }
+.guide-short .guide-breadcrumbs { margin-bottom: 28px; }
+.guide-short .guide-hero h1 { font-size: clamp(36px, 5vw, 58px); margin-bottom: 18px; }
+.guide-short .guide-answer { margin-top: 24px; }
+.guide-short .guide-layout { display: block; max-width: 920px; padding-top: 36px; padding-bottom: 24px; }
+.guide-short .guide-article { max-width: none; }
+.guide-short .guide-article section { margin-bottom: 22px; }
+.guide-short .guide-points { padding-left: 22px; margin: 0; }
+.guide-short .guide-points li { margin-bottom: 14px; }
+.guide-short .guide-screenshot { margin: 24px 0; }
+.guide-short .guide-screenshot figcaption { margin-left: 0; margin-right: 0; }
+.guide-short .guide-related { font-size: 14px; line-height: 1.75; }
+.guide-short .guide-related .guide-label { color: var(--text-onpaper-muted); margin-bottom: 8px; }
+.guide-short .guide-related p { margin-bottom: 0; }
+.guide-short .guide-related a { text-underline-offset: 3px; }
+.guide-short .guide-cta { padding: 34px 0; }
+.guide-short .guide-cta h2 { font-size: clamp(28px, 4vw, 36px); }
+@media (max-width: 620px) {
+  .guide-short .guide-layout { padding-top: 28px; padding-bottom: 28px; }
+  .guide-short .guide-answer { padding: 20px; }
+}
+
+/* UI details stay at readable size rather than stretching small crops. */
+.guide-short .guide-screenshot-full { display: block; cursor: zoom-in; }
+.guide-short .guide-screenshot-detail { text-align: center; }
+.guide-short .guide-screenshot-detail img { display: block; width: auto; max-width: 100%; max-height: 520px; margin: 0 auto; }

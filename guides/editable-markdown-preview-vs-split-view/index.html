@@ -9,13 +9,13 @@
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
 <title>Editable Markdown Preview vs Split Preview — Zizeg</title>
-<meta name="description" content="Understand source editing, read-only preview, and editable Markdown rendering. See how Zizeg lets you edit Preview and Source side by side." />
+<meta name="description" content="Editable Markdown preview or split preview? See the difference, and how Zizeg lets you edit both the formatted Preview and the Source side by side." />
 <link rel="canonical" href="https://zizeg.app/guides/editable-markdown-preview-vs-split-view/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zizeg" />
 <meta property="og:title" content="Editable Markdown Preview vs Split Preview — Zizeg" />
-<meta property="og:description" content="Understand source editing, read-only preview, and editable Markdown rendering. See how Zizeg lets you edit Preview and Source side by side." />
+<meta property="og:description" content="Editable Markdown preview or split preview? See the difference, and how Zizeg lets you edit both the formatted Preview and the Source side by side." />
 <meta property="og:url" content="https://zizeg.app/guides/editable-markdown-preview-vs-split-view/" />
 <meta property="og:image" content="https://zizeg.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
@@ -23,7 +23,7 @@
 <meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Editable Markdown Preview vs Split Preview — Zizeg" />
-<meta name="twitter:description" content="Understand source editing, read-only preview, and editable Markdown rendering. See how Zizeg lets you edit Preview and Source side by side." />
+<meta name="twitter:description" content="Editable Markdown preview or split preview? See the difference, and how Zizeg lets you edit both the formatted Preview and the Source side by side." />
 <meta name="twitter:image" content="https://zizeg.app/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,8 +36,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Editable Markdown preview or split preview: what is the difference?",
-      "description": "Understand source editing, read-only preview, and editable Markdown rendering. See how Zizeg lets you edit Preview and Source side by side.",
+      "headline": "Editable Markdown Preview vs Split Preview",
+      "description": "Editable Markdown preview or split preview? See the difference, and how Zizeg lets you edit both the formatted Preview and the Source side by side.",
       "mainEntityOfPage": "https://zizeg.app/guides/editable-markdown-preview-vs-split-view/",
       "inLanguage": "en",
       "author": {
@@ -50,7 +50,8 @@
         "name": "Zizeg",
         "url": "https://zizeg.app/"
       },
-      "image": "https://zizeg.app/screenshots/shot-01-hero.png"
+      "image": "https://zizeg.app/screenshots/shot-01-hero.png",
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -70,7 +71,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Editable Preview vs split preview",
+          "name": "Editable Markdown Preview vs Split Preview",
           "item": "https://zizeg.app/guides/editable-markdown-preview-vs-split-view/"
         }
       ]
@@ -79,7 +80,7 @@
 }
 </script>
 </head>
-<body class="guide-page">
+<body class="guide-page guide-short">
 <a class="guide-skip" href="#main-content">Skip to guide</a>
 <nav class="nav">
   <div class="wrap">
@@ -97,21 +98,27 @@
   </div>
 </nav>
 <main id="main-content">
-<header class="guide-hero"><div class="wrap">
-<nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Editable Preview vs split preview</span></nav>
-<p class="eyebrow">See it. Edit it.</p>
-<h1>Two panes?<br /><em>Ask where you can edit.</em></h1><p class="guide-lead">A formatted preview helps you see the document. An editable preview lets you change it right where you’re reading.</p>
-<div class="guide-answer"><span class="guide-label">The quick answer</span><p>A split preview may show an editable source pane beside a read-only result. An editable rendered view lets you change the formatted document directly. In Zizeg, <strong>Preview and Source are both editors</strong>: use either on its own or keep both in Split view.</p></div>
-</div></header>
-<div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#editing-models">Four editing models</a><a href="#same-edit">The same three small edits</a><a href="#zizeg-split">Two editors in Zizeg</a><a href="#source-control">When Source helps</a><a href="#choose-model">Choose by the task</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="editing-models"><h2>“Preview” doesn’t always mean the same thing.</h2><p>A Markdown app can show source text, a rendered document, or both. The important question is where you can actually make changes.</p><div class="guide-table-wrap"><table class="guide-table"><caption>Four common Markdown editing models</caption><thead><tr><th scope="col">Model</th><th scope="col">What you see</th><th scope="col">Where you edit</th></tr></thead><tbody><tr><th scope="row">Source editor</th><td>The source text and its Markdown markers, without a separate rendered pane.</td><td>Directly in the source.</td></tr><tr><th scope="row">Source with read-only preview</th><td>Source beside its formatted result.</td><td>In the source; the preview shows the result.</td></tr><tr><th scope="row">Editable rendered view</th><td>The formatted document as a single editing view.</td><td>Directly in the rendered text.</td></tr><tr><th scope="row">Source with editable Preview</th><td>Markdown source beside the formatted document.</td><td>In either pane, with changes kept in sync—as in Zizeg’s Split view.</td></tr></tbody></table></div><p>Split describes a layout, not an editing capability. Two panes can mean one editor plus one viewer, or two synchronized editors.</p></section><section id="same-edit"><h2>Try the same change in each model.</h2><p>Imagine a short project update with a typo, a heading, and a table of owners. The final Markdown can be the same; the path to the change is different.</p><h3>Correct a typo.</h3><p>In a source editor, find the word in the Markdown and correct it. With a read-only preview, you may spot the typo in the formatted document, then find its source to fix it. In an editable rendered view, click the word where you noticed it and type the correction.</p><h3>Turn a paragraph into a heading.</h3><p>In Source, add the appropriate heading marker, such as <code>## </code>. In Zizeg, place the cursor in the paragraph and choose a heading from the <strong>Style</strong> menu, or use a shortcut such as <strong>Option + Command + 1</strong> (<kbd>⌥⌘1</kbd>) for Heading 1. The formatting commands work in both Preview and Source.</p><h3>Change a table cell.</h3><p>In Source, edit the text between the cell’s pipe separators. In an editable table, click the cell and change its text. For row, column, and alignment changes, see <a href="/guides/edit-markdown-tables-visually/">the visual Markdown table guide</a>.</p></section><section id="zizeg-split"><h2>In Zizeg, both panes are editors.</h2><p>Choose <strong>Preview</strong> to work with the formatted document, <strong>Source</strong> to work directly with Markdown, or <strong>Split</strong> to keep both visible. In either editor, you can type and edit directly, use keyboard shortcuts, or use the formatting controls above the editors and the app’s menus. Changes made in Preview or Source update the other view.</p><figure class="guide-screenshot"><img src="/screenshots/shot-01-hero.png" width="1400" height="886" loading="lazy" alt="Zizeg’s sample document with rendered Preview beside editable Markdown Source" /><figcaption>One Markdown document in Zizeg’s Split view. Preview and Source are both editable when unlocked.</figcaption></figure><p>Use <strong>View → Preview</strong> (<kbd>⌘1</kbd>), <strong>Source</strong> (<kbd>⌘2</kbd>), or <strong>Split</strong> (<kbd>⌘3</kbd>). While Split is active, click Split again to exchange the panes. You can put Source on the left or right.</p><p>Choose <strong>Default view for new tabs</strong> under <strong>Preferences → General</strong> if you want new documents to start in your preferred mode. To scroll each pane separately, turn off <strong>Sync scroll position between split panes</strong> under <strong>Preferences → Editor</strong>.</p><div class="guide-product-note"><strong>Read for free. Unlock editing when you need it.</strong><p>Opening and reading are free in every view. Editing and HTML or PDF export require a Lifetime Unlock or an active subscription.</p></div></section><section id="source-control"><h2>Keep Source for the details that matter.</h2><p>Visual editing is convenient for prose, headings, lists, and tables. Source is useful when you want to inspect syntax, change metadata, or control exact whitespace and Markdown markers.</p><p>Zizeg normally keeps Preview edits localized to changed lines in affected blocks. Some edits require broader reformatting, so use Source when precise syntax preservation matters. The file remains Markdown in either view.</p></section><section id="choose-model"><h2>Choose the view that makes the next edit easier.</h2><p>For a quick correction in a readable report, editable Preview can save you a trip through the source. For careful markup work, Source keeps the syntax visible. Split is useful when you want to see both the document and how it is written.</p><p>You don’t need a different storage system to switch between them. Zizeg works with the same plain file. See <a href="/guides/edit-markdown-without-vault/">editing a standalone Markdown file</a> for that workflow, or <a href="/compare">compare Markdown editors</a> when you’re choosing an app.</p></section><p>When the saved syntax matters, see <a href="/guides/edit-markdown-without-reformatting/">making focused edits and reviewing the source</a>. If another app renders the same file differently, use <a href="/guides/markdown-looks-different-between-apps/">the cross-app appearance guide</a>.</p></article></div>
+  <header class="guide-hero"><div class="wrap">
+    <nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Editable Markdown Preview vs Split Preview</span></nav>
+    <p class="eyebrow">Two panes. Two editors.</p>
+    <h1>See the document.<br /><em>Edit where you read.</em></h1>
+    <div class="guide-answer"><span class="guide-label">The quick answer</span><p>A split preview can mean editable source beside a read-only result. Zizeg goes further: Preview and Source are both editors. Use either alone, or keep them together in Split with changes kept in sync.</p></div>
+  </div></header>
+  <div class="wrap guide-layout"><article class="guide-article">
+    <section aria-labelledby="topic-points"><h2 id="topic-points">Choose the view for the next change.</h2><ul class="guide-points">
+<li><strong>Preview is editable.</strong> Click the word, heading or table cell you want to change. Formatting commands work in the rendered document.</li>
+<li><strong>Source keeps the syntax visible.</strong> Inspect Markdown markers, metadata and whitespace directly. Both views work with the same .md file.</li>
+<li><strong>Split keeps both in sight.</strong> Choose ⌘3 for Split, ⌘1 for Preview or ⌘2 for Source. Click active Split again to swap pane order.</li>
+    </ul></section>
+    <figure class="guide-screenshot"><img src="/screenshots/shot-01-hero.png" width="1400" height="886" loading="lazy" alt="Preview and Source: both editable when editing is unlocked." /><figcaption>Preview and Source: both editable when editing is unlocked.</figcaption></figure>
+    <nav class="guide-related" aria-label="Related topics"><span class="guide-label">Related</span><p><a href="/guides/edit-markdown-without-reformatting/">Edit Markdown Without Unnecessary Reformatting</a> · <a href="/guides/edit-markdown-tables-visually/">Edit Markdown Tables Visually on Mac</a></p></nav>
+  </article></div>
   <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
-    <p class="eyebrow">Open your next .md file</p>
-    <h2 id="guide-cta-title">Edit the document.<br /><em>Keep the plain file.</em></h2>
-    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
-    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <h2 id="guide-cta-title">Try it with your Markdown.</h2>
+    <p>Open a familiar file and see both views in Zizeg.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a></div>
     <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
   </div></section>
-<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/native-mac-typora-alternative/"><span class="guide-label">Related guide</span><strong>Looking for a native Mac alternative to Typora? Start with your workflow <span aria-hidden="true">→</span></strong></a><a href="/guides/edit-markdown-tables-visually/"><span class="guide-label">Related guide</span><strong>How to edit Markdown tables without counting pipes <span aria-hidden="true">→</span></strong></a></nav>
 </main>
 <footer class="footer">
   <div class="wrap">

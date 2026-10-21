@@ -8,22 +8,22 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16-dark.png" media="(prefers-color-scheme: dark)" />
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
-<title>Why Markdown Looks Different in Different Apps — Zizeg</title>
-<meta name="description" content="Diagnose Markdown differences between apps: typography, line breaks, tables, extensions, or changed source. Inspect a sample in Zizeg Source and Preview." />
+<title>Why Markdown Looks Different Between Apps — Zizeg</title>
+<meta name="description" content="Markdown looks different in another app? Check styling, supported syntax and changed text, with Source beside Preview in Zizeg." />
 <link rel="canonical" href="https://zizeg.app/guides/markdown-looks-different-between-apps/" />
 <meta name="robots" content="index, follow, max-image-preview:large" />
 <meta property="og:type" content="article" />
 <meta property="og:site_name" content="Zizeg" />
-<meta property="og:title" content="Why Markdown Looks Different in Different Apps — Zizeg" />
-<meta property="og:description" content="Diagnose Markdown differences between apps: typography, line breaks, tables, extensions, or changed source. Inspect a sample in Zizeg Source and Preview." />
+<meta property="og:title" content="Why Markdown Looks Different Between Apps — Zizeg" />
+<meta property="og:description" content="Markdown looks different in another app? Check styling, supported syntax and changed text, with Source beside Preview in Zizeg." />
 <meta property="og:url" content="https://zizeg.app/guides/markdown-looks-different-between-apps/" />
 <meta property="og:image" content="https://zizeg.app/og-image.png" />
 <meta property="og:image:width" content="1200" />
 <meta property="og:image:height" content="630" />
 <meta property="og:image:alt" content="Zizeg, a native Mac Markdown editor" />
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Why Markdown Looks Different in Different Apps — Zizeg" />
-<meta name="twitter:description" content="Diagnose Markdown differences between apps: typography, line breaks, tables, extensions, or changed source. Inspect a sample in Zizeg Source and Preview." />
+<meta name="twitter:title" content="Why Markdown Looks Different Between Apps — Zizeg" />
+<meta name="twitter:description" content="Markdown looks different in another app? Check styling, supported syntax and changed text, with Source beside Preview in Zizeg." />
 <meta name="twitter:image" content="https://zizeg.app/og-image.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -36,8 +36,8 @@
   "@graph": [
     {
       "@type": "Article",
-      "headline": "Why does the same Markdown look different in different apps?",
-      "description": "Diagnose Markdown differences between apps: typography, line breaks, tables, extensions, or changed source. Inspect a sample in Zizeg Source and Preview.",
+      "headline": "Why Markdown Looks Different Between Apps",
+      "description": "Markdown looks different in another app? Check styling, supported syntax and changed text, with Source beside Preview in Zizeg.",
       "mainEntityOfPage": "https://zizeg.app/guides/markdown-looks-different-between-apps/",
       "inLanguage": "en",
       "author": {
@@ -49,7 +49,8 @@
         "@type": "Organization",
         "name": "Zizeg",
         "url": "https://zizeg.app/"
-      }
+      },
+      "dateModified": "2026-10-21"
     },
     {
       "@type": "BreadcrumbList",
@@ -69,7 +70,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Markdown across different apps",
+          "name": "Why Markdown Looks Different Between Apps",
           "item": "https://zizeg.app/guides/markdown-looks-different-between-apps/"
         }
       ]
@@ -78,7 +79,7 @@
 }
 </script>
 </head>
-<body class="guide-page">
+<body class="guide-page guide-short">
 <a class="guide-skip" href="#main-content">Skip to guide</a>
 <nav class="nav">
   <div class="wrap">
@@ -96,29 +97,27 @@
   </div>
 </nav>
 <main id="main-content">
-<header class="guide-hero"><div class="wrap"><nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Markdown across different apps</span></nav><p class="eyebrow">Same source. Different rendering.</p><h1>The same file.<br /><em>A different-looking document.</em></h1><p class="guide-lead">Separate presentation differences from unsupported syntax and changes to the saved text.</p><div class="guide-answer"><span class="guide-label">The quick answer</span><p>Markdown apps can use different styling and support different extensions. First compare the <strong>source</strong>: if the text is unchanged, check typography, line-break handling, and support for features such as tables or diagrams before treating the file as damaged.</p></div></div></header><div class="wrap guide-layout"><aside class="guide-toc" aria-label="On this page"><p class="guide-label">On this page</p><a href="#diagnose">Appearance or missing structure?</a><a href="#specimen">Try one small specimen</a><a href="#breaks">Line breaks and visual wrapping</a><a href="#extensions">Tables and specialized syntax</a><a href="#zizeg">Inspect Source beside Preview</a><a href="#portable">Make the handoff predictable</a><a class="guide-toc-all" href="/guides/">All guides <span aria-hidden="true">→</span></a></aside><article class="guide-article"><section id="diagnose"><h2>First ask what actually changed.</h2><div class="guide-table-wrap"><table class="guide-table"><caption>Three different causes of a different-looking document</caption><thead><tr><th scope="col">Symptom</th><th scope="col">Likely area to check</th></tr></thead><tbody><tr><th scope="row">Different fonts, colors, spacing, or width</th><td>The app’s theme and presentation settings.</td></tr><tr><th scope="row">A table stays as text, or diagram code stays code</th><td>Support for that Markdown extension.</td></tr><tr><th scope="row">The saved characters or structure changed</th><td>An edit or conversion; compare the source versions.</td></tr></tbody></table></div><p>A heading with a different font is still a heading. A diagram that never renders is a different issue. Inspect Source before assuming the file was corrupted, then choose the fix for the actual cause.</p></section><section id="specimen"><h2>Use the same source in both apps.</h2><p>This example includes a heading, a line break inside a paragraph, a pipe table, an escaped pipe inside a cell, and a Mermaid code block.</p><div class="guide-file-example"><p class="guide-label">One file to compare</p><pre><code># Project update
-
-First line
-second line in the same paragraph.
-
-| Task | Status |
-| --- | --- |
-| Review | Ready |
-| Label A \| B | Checked |
-
-```mermaid
-graph LR
-  Draft --&gt; Review
-```
-</code></pre></div><p><a href="examples/renderer-check.md" download>Download the specimen</a> and open the same copy in each app. Compare the structure as well as the appearance. This is an inspection exercise, not a claim that the two apps will produce identical output.</p></section><section id="breaks"><h2>A new source line is not always a new paragraph.</h2><p>The specimen’s two lines of prose belong to one paragraph because there is no blank line between them. A soft line break can be rendered as a space or a line break; a narrow window may also wrap a line without changing the source.</p><p>When you want a new paragraph, separate it with a blank line. If you need a deliberate line break inside the paragraph, check the syntax supported by your destination. The <a href="https://spec.commonmark.org/0.31.2/#soft-line-breaks">CommonMark soft-break rules</a> and <a href="https://spec.commonmark.org/0.31.2/#hard-line-breaks">hard-break rules</a> describe the distinction.</p></section><section id="extensions"><h2>Check the feature, not just the .md extension.</h2><p>Pipe tables are an extension described in <a href="https://github.github.com/gfm/#tables-extension-">the GitHub Flavored Markdown specification</a>. They need a header and delimiter row. In a cell, <code>\|</code> represents a literal pipe instead of a column separator, as in the “Label A | B” example.</p><p>If a table stays as source text, check whether the receiving app supports pipe tables and whether the delimiter row is present. If columns split unexpectedly, inspect literal pipes in cell content. For editing an existing table in Zizeg, see <a href="/guides/edit-markdown-tables-visually/">the visual table guide</a>.</p><p>The Mermaid block illustrates a separate extension. An app with diagram support may render it as a diagram; an app without that support can show a fenced code block instead. Zizeg supports common Markdown features and core GFM features such as tables, task lists, and strikethrough; it does not render Mermaid diagrams, math, or footnotes.</p><p>Front matter and raw HTML also receive app-specific treatment. Zizeg presents <a href="/guides/markdown-yaml-front-matter/">front matter separately in Preview</a> and applies safety and support rules to raw HTML, so an HTML-heavy document may look different from a browser page.</p></section><section id="zizeg"><h2>Look at what the file contains.</h2><p>Open the .md in Zizeg. If it is your default Markdown app, double-click the file in Finder. Choose <strong>Split</strong> (<kbd>⌘3</kbd>) to compare the source with its formatted view; if Split is your default viewing mode, both panes are already there.</p><p>Check the heading markers, paragraph boundaries, table delimiter row, and fenced code. Reading the file is free. If you need to change the source, editing is available through a Lifetime Unlock or an active subscription.</p><p>If pictures are missing, diagnose them separately: <a href="/guides/fix-markdown-images-after-moving-file/">local paths and folder access</a> or <a href="/guides/markdown-remote-images-not-loading/">remote URLs and loading controls</a>.</p></section><section id="portable"><h2>Match the document to its destination.</h2><ul><li>Use headings, paragraphs, lists, links, and fenced code for a straightforward shared document.</li><li>Check that the receiving app supports any tables or specialized syntax you rely on.</li><li>Keep image assets with the source, and check their paths.</li><li>Open a sample in the destination app before committing to a workflow.</li></ul><p>If consistent presentation matters more than further editing, send a checked <a href="/guides/markdown-to-pdf-mac/">PDF</a> or <a href="/guides/markdown-to-standalone-html/">standalone HTML</a> copy. The <a href="/guides/share-markdown-pdf-or-html/">format-choice guide</a> compares those handoffs.</p><p>If the saved source itself has changed, follow <a href="/guides/edit-markdown-without-reformatting/">the focused-edit and source-review guide</a> rather than changing display settings.</p></section></article></div>
+  <header class="guide-hero"><div class="wrap">
+    <nav class="guide-breadcrumbs" aria-label="Breadcrumb"><a href="/">Home</a><span aria-hidden="true">/</span><a href="/guides/">Guides</a><span aria-hidden="true">/</span><span>Why Markdown Looks Different Between Apps</span></nav>
+    <p class="eyebrow">Same source. Different rendering.</p>
+    <h1>The same file.<br /><em>A different-looking document.</em></h1>
+    <div class="guide-answer"><span class="guide-label">The quick answer</span><p>Markdown apps can use different styles and support different extensions. Compare the source first: a new font is a display change, unsupported syntax is a feature difference, and changed text needs a source review.</p></div>
+  </div></header>
+  <div class="wrap guide-layout"><article class="guide-article">
+    <section aria-labelledby="topic-points"><h2 id="topic-points">Check which difference you have.</h2><ul class="guide-points">
+<li><strong>Different appearance.</strong> Fonts, spacing and reading width can vary without changing the file. A soft line break can also render differently.</li>
+<li><strong>Different feature support.</strong> Tables, raw HTML and other extensions may be handled differently. Zizeg currently doesn’t render math, Mermaid or footnotes.</li>
+<li><strong>Different saved text.</strong> Use Split to inspect the Markdown alongside Preview. If syntax itself changed after editing, check the source-preservation page.</li>
+    </ul></section>
+    <figure class="guide-screenshot"><img src="/screenshots/shot-01-hero.png" width="1400" height="886" loading="lazy" alt="Compare the Markdown source with Zizeg’s rendered view." /><figcaption>Compare the Markdown source with Zizeg’s rendered view.</figcaption></figure>
+    <nav class="guide-related" aria-label="Related topics"><span class="guide-label">Related</span><p><a href="/guides/markdown-line-breaks/">Markdown Line Breaks: New Line or New Paragraph?</a> · <a href="/guides/edit-markdown-without-reformatting/">Edit Markdown Without Unnecessary Reformatting</a></p></nav>
+  </article></div>
   <section class="guide-cta" aria-labelledby="guide-cta-title"><div class="wrap">
-    <p class="eyebrow">Read the document. Inspect the source.</p>
-    <h2 id="guide-cta-title">Keep the source.<br /><em>See what it says.</em></h2>
-    <p>A native Mac app for readable Markdown, with editable Preview and Source when you want to go further.</p>
-    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a><a href="/">Explore Zizeg <span aria-hidden="true">→</span></a></div>
+    <h2 id="guide-cta-title">Try it with your Markdown.</h2>
+    <p>Open a familiar file and see both views in Zizeg.</p>
+    <div class="guide-cta-actions"><a class="app-store-link" href="https://apps.apple.com/app/apple-store/id6800761262?pt=129296515&amp;ct=Zizeg%20Site&amp;mt=8" aria-label="Download Zizeg on the Mac App Store"><img src="/assets/download-on-mac-app-store.svg" width="156" height="40" alt="Download on the Mac App Store" /></a></div>
     <p class="guide-cta-small">Reading is free. Editing and export require unlocking.</p>
   </div></section>
-<nav class="guide-next wrap" aria-label="Related guides"><a href="/guides/edit-markdown-without-reformatting/"><span class="guide-label">Related guide</span><strong>Keep source edits focused <span aria-hidden="true">→</span></strong></a><a href="/guides/share-markdown-pdf-or-html/"><span class="guide-label">Related guide</span><strong>Choose the format to send <span aria-hidden="true">→</span></strong></a></nav>
 </main>
 <footer class="footer">
   <div class="wrap">
